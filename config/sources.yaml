@@ -1,0 +1,33 @@
+# Every external input. `make fetch` records sha256 into data/raw/manifest.yaml. `${VAR}` is expanded from .env.
+sources:
+  cdi_nonrenewal:
+    type: xlsx
+    urls:
+      - https://www.insurance.ca.gov/01-consumers/200-wrr/upload/Residential-Property-Voluntary-Market-New-Renew-NonRenew-by-ZIP-2015-2021.xlsx
+      - https://www.insurance.ca.gov/01-consumers/200-wrr/upload/Residential-Insurance-Voluntary-Market-New-Renew-NonRenew-by-ZIP-2020-2023.xlsx
+    normalizer: cdi_nonrenewal
+  cdi_fair_plan:
+    type: pdf            # FAIR Plan residential policies-in-force by ZIP, FY2021-FY2025 (as of 9/30 each year)
+    url: https://www.cfpnet.com/wp-content/uploads/2025/11/CFP-5-yr-PIF-Zip-FY25-DWE-251114.pdf
+    normalizer: cdi_fair_plan
+  census_zcta:
+    type: shapefile_zip  # cartographic (generalized) ZCTA5 boundaries; the full TIGER file is 528 MB
+    url: https://www2.census.gov/geo/tiger/GENZ2020/shp/cb_2020_us_zcta520_500k.zip
+    normalizer: zcta
+  calfire_fhsz:
+    type: arcgis_geojson # CAL FIRE feature services: SRA (effective 2024-04-01) and LRA (map dated 2025-03-24)
+    urls:
+      - https://services1.arcgis.com/jUJYIo9tSA7EHvfZ/arcgis/rest/services/FHSZSRA_23_3/FeatureServer/0
+      - https://services1.arcgis.com/jUJYIo9tSA7EHvfZ/arcgis/rest/services/FHSALRA25_v1_All/FeatureServer/0
+    normalizer: fhsz
+  acs_zcta:
+    type: json
+    url: https://api.census.gov/data/2023/acs/acs5?get=B25077_001E,B25035_001E,B19013_001E&for=zip%20code%20tabulation%20area:*&key=${CENSUS_API_KEY}
+    normalizer: acs
+  cdi_bulletins:
+    type: pdf
+    urls:
+      - https://www.insurance.ca.gov/0250-insurers/0300-insurers/0200-bulletins/bulletin-notices-commiss-opinion/upload/Bulletin-2020-12-Mandatory-Moratorium-on-Cancellations-and-Non-Renewals-of-Policies-of-Residential-Property-Insurance-After-the-Declaration-of-a-State-of-Emergency.pdf
+      - https://www.insurance.ca.gov/0250-insurers/0300-insurers/0200-bulletins/bulletin-notices-commiss-opinion/upload/Bulletin-2025-1-One-Year-Moratorium-Updated-ZIP-Codes-Amended-17-January-2025.pdf
+    normalizer: documents
+    doc_source: cdi_bulletin
