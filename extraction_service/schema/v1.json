@@ -1,0 +1,25 @@
+{
+  "type": "object",
+  "required": ["entities", "edges"],
+  "additionalProperties": false,
+  "properties": {
+    "entities": {"type": "array", "items": {
+      "type": "object", "required": ["mention", "type"], "additionalProperties": false,
+      "properties": {
+        "mention": {"type": "string"},
+        "type": {"enum": ["ZIP", "Insurer", "Fire", "Moratorium", "Regulation", "Official", "RateFiling", "County"]}
+      }}},
+    "edges": {"type": "array", "items": {
+      "type": "object", "required": ["src_mention", "rel", "dst_mention", "span", "confidence"], "additionalProperties": false,
+      "properties": {
+        "src_mention": {"type": "string"},
+        "rel": {"enum": ["PROTECTED_BY", "TRIGGERED", "ISSUED", "FILED", "DECIDED", "AUTHORED", "DONATED_TO"]},
+        "dst_mention": {"type": "string"},
+        "valid_from": {"type": ["string", "null"]},
+        "valid_to": {"type": ["string", "null"]},
+        "props": {"type": "object"},
+        "span": {"type": "string", "minLength": 8},
+        "confidence": {"type": "number", "minimum": 0, "maximum": 1}
+      }}}
+  }
+}
