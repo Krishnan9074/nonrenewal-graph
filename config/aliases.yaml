@@ -1,0 +1,9 @@
+# alias -> canonical entity id. Seed from CDI admitted-insurer list; grows via review.
+"State Farm General Insurance Company": insurer:naic:25143
+"State Farm General": insurer:naic:25143
+"State Farm": insurer:naic:25143
+"California FAIR Plan": insurer:fairplan
+"Insurance Commissioner Ricardo Lara": official:cdi:commissioner
+"Ricardo Lara": official:cdi:commissioner
+"Governor Gavin Newsom": official:ca:governor
+"CAL FIRE": org:calfire

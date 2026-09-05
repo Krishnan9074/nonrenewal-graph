@@ -1,0 +1,25 @@
+[project]
+name = "policygraph"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+  "duckdb>=1.1", "pandas>=2.2", "pyarrow>=17", "geopandas>=1.0", "openpyxl>=3.1",
+  "httpx>=0.27", "pydantic>=2.8", "pyyaml>=6", "typer>=0.12", "pypdf>=5",
+  "networkx>=3.3", "statsmodels>=0.14", "streamlit>=1.38", "pydeck>=0.9",
+  "fastapi>=0.115", "uvicorn>=0.30", "anthropic>=0.40",
+  "cryptography>=43",  # FAIR Plan PDFs are AES-encrypted; pypdf needs it to decrypt
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[tool.ruff]
+line-length = 130
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

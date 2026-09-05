@@ -1,0 +1,9 @@
+.env
+.venv/
+__pycache__/
+data/raw/
+data/normalized/
+data/graph.duckdb
+*.pyc
+data/extractions/index.sqlite
+.DS_Store
