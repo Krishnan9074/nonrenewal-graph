@@ -1,0 +1,54 @@
+- mention: Mercury Insurance
+  type: Insurer
+  entity_id: insurer:naic:27553
+  method: llm_judge
+  confidence: 0.99
+  nearest: insurer:naic:27553
+  score: 0.7619900947052063
+  embed_model: nomic-ai/nomic-embed-text-v1.5
+  judge_model: accounts/fireworks/models/gpt-oss-120b
+- mention: State Farm
+  type: Insurer
+  entity_id: null
+  method: unresolved
+  confidence: 0.0
+  nearest: insurer:naic:25143
+  score: 0.6675645975194556
+  embed_model: nomic-ai/nomic-embed-text-v1.5
+  judge_model: accounts/fireworks/models/gpt-oss-120b
+- mention: State Farm emergency interim rate filing 2025
+  type: RateFiling
+  entity_id: ratefiling:cdi:2025:state-farm-general-emergency-interim
+  method: embedding
+  confidence: 0.9335731034840891
+  nearest: ratefiling:cdi:2025:state-farm-general-emergency-interim
+  score: 0.9335731034840891
+  embed_model: nomic-ai/nomic-embed-text-v1.5
+  judge_model: accounts/fireworks/models/gpt-oss-120b
+- mention: Safer from Wildfire Regulation
+  type: Regulation
+  entity_id: regulation:ca:safer-from-wildfires-2022
+  method: llm_judge
+  confidence: 0.97
+  nearest: regulation:ca:safer-from-wildfires-2022
+  score: 0.8485128479418903
+  embed_model: nomic-ai/nomic-embed-text-v1.5
+  judge_model: accounts/fireworks/models/gpt-oss-120b
+- mention: catastrophe modeling and ratemaking regulation
+  type: Regulation
+  entity_id: regulation:ca:catastrophe-modeling-2024
+  method: llm_judge
+  confidence: 0.96
+  nearest: regulation:ca:catastrophe-modeling-2024
+  score: 0.8348409203138778
+  embed_model: nomic-ai/nomic-embed-text-v1.5
+  judge_model: accounts/fireworks/models/gpt-oss-120b
+- mention: wildfire catastrophe modeling regulation
+  type: Regulation
+  entity_id: regulation:ca:catastrophe-modeling-2024
+  method: llm_judge
+  confidence: 0.96
+  nearest: regulation:ca:catastrophe-modeling-2024
+  score: 0.9019546698281876
+  embed_model: nomic-ai/nomic-embed-text-v1.5
+  judge_model: accounts/fireworks/models/gpt-oss-120b

@@ -1,0 +1,57 @@
+# Resolver regression set: mention + type -> expected entity id and method. Runs offline: canonical rules, the alias
+# table in config/entities.yaml, and the pinned service answers (embedding kNN, LLM judge) in config/resolutions.yaml.
+# Grows by review.
+- {mention: "94563", type: ZIP, entity_id: "zip:94563", method: canonical}
+- {mention: "94549", type: ZIP, entity_id: "zip:94549", method: canonical}
+- {mention: "91001", type: ZIP, entity_id: "zip:91001", method: canonical}
+- {mention: " 95403 ", type: ZIP, entity_id: "zip:95403", method: canonical}
+- {mention: "SB 824", type: Regulation, entity_id: "bill:ca:SB824", method: canonical}
+- {mention: "SB824", type: Regulation, entity_id: "bill:ca:SB824", method: canonical}
+- {mention: "AB 2996", type: Regulation, entity_id: "bill:ca:AB2996", method: canonical}
+- {mention: "Eaton Fire 2025", type: Fire, entity_id: "fire:eaton:2025", method: canonical}
+- {mention: "Palisades Fire 2025", type: Fire, entity_id: "fire:palisades:2025", method: canonical}
+- {mention: "Sky Fire 2019", type: Fire, entity_id: "fire:sky:2019", method: canonical}
+- {mention: "SCU Lightning Complex Fire 2020", type: Fire, entity_id: "fire:scu-lightning-complex:2020", method: canonical}
+- {mention: "W-5 Cold Springs Fire 2020", type: Fire, entity_id: "fire:w-5-cold-springs:2020", method: canonical}
+- {mention: "Butte, Tehama, Glenn Lightning Complex Fire 2020", type: Fire, entity_id: "fire:butte-tehama-glenn-lightning-complex:2020", method: canonical}
+- {mention: "Creek Fire 2020", type: Fire, entity_id: "fire:creek:2020", method: canonical}
+- {mention: "Eaton Fire moratorium 2025-01-07", type: Moratorium, entity_id: "moratorium:2025-01-07:eaton", method: canonical}
+- {mention: "Sky Fire moratorium 2019-10-27", type: Moratorium, entity_id: "moratorium:2019-10-27:sky", method: canonical}
+- {mention: "SCU Lightning Complex Fire moratorium 2020-08-18", type: Moratorium, entity_id: "moratorium:2020-08-18:scu-lightning-complex", method: canonical}
+- {mention: "Bobcat Fire moratorium 2020-09-25", type: Moratorium, entity_id: "moratorium:2020-09-25:bobcat", method: canonical}
+- {mention: "Creek Fire moratorium 2020-09-06", type: Moratorium, entity_id: "moratorium:2020-09-06:creek", method: canonical}
+- {mention: "Glass Fire moratorium 2020-09-28", type: Moratorium, entity_id: "moratorium:2020-09-28:glass", method: canonical}
+- {mention: "State Farm General Insurance Company", type: Insurer, entity_id: "insurer:naic:25143", method: alias}
+- {mention: "State Farm General", type: Insurer, entity_id: "insurer:naic:25143", method: alias}
+- {mention: "State Farm", type: Insurer, entity_id: "insurer:naic:25143", method: alias}
+- {mention: "SFG", type: Insurer, entity_id: "insurer:naic:25143", method: alias}
+- {mention: "sfg", type: Insurer, entity_id: "insurer:naic:25143", method: alias}
+- {mention: "Mercury Insurance", type: Insurer, entity_id: "insurer:naic:27553", method: llm_judge}
+- {mention: "Mercury", type: Insurer, entity_id: "insurer:naic:27553", method: alias}
+- {mention: "CSAA", type: Insurer, entity_id: "insurer:naic:15539", method: alias}
+- {mention: "Farmers", type: Insurer, entity_id: "insurer:naic:21652", method: alias}
+- {mention: "USAA", type: Insurer, entity_id: "insurer:naic:25941", method: alias}
+- {mention: "California FAIR Plan", type: Insurer, entity_id: "insurer:fairplan", method: alias}
+- {mention: "the FAIR Plan", type: Insurer, entity_id: "insurer:fairplan", method: alias}
+- {mention: "Ricardo Lara", type: Official, entity_id: "official:cdi:commissioner", method: alias}
+- {mention: "Commissioner Lara", type: Official, entity_id: "official:cdi:commissioner", method: alias}
+- {mention: "Safer from Wildfire Regulation", type: Regulation, entity_id: "regulation:ca:safer-from-wildfires-2022", method: llm_judge}
+- {mention: "the Commissioner", type: Official, entity_id: "official:cdi:commissioner", method: alias}
+- {mention: "Gavin Newsom", type: Official, entity_id: "official:ca:governor", method: alias}
+- {mention: "Governor Newsom", type: Official, entity_id: "official:ca:governor", method: alias}
+- {mention: "catastrophe modeling and ratemaking regulation", type: Regulation, entity_id: "regulation:ca:catastrophe-modeling-2024", method: llm_judge}
+- {mention: "wildfire catastrophe modeling regulation", type: Regulation, entity_id: "regulation:ca:catastrophe-modeling-2024", method: llm_judge}
+- {mention: "Michael Soller", type: Official, entity_id: "official:cdi:deputy-communications", method: alias}
+- {mention: "Sustainable Insurance Strategy", type: Regulation, entity_id: "regulation:ca:sustainable-insurance-strategy", method: alias}
+- {mention: "Proposition 103", type: Regulation, entity_id: "regulation:ca:prop103", method: alias}
+- {mention: "Prop. 103", type: Regulation, entity_id: "regulation:ca:prop103", method: alias}
+- {mention: "Net Cost of Reinsurance in Ratemaking Regulation", type: Regulation, entity_id: "regulation:ca:net-cost-of-reinsurance-2024", method: alias}
+- {mention: "State Farm General emergency interim rate filing 2025", type: RateFiling, entity_id: "ratefiling:cdi:2025:state-farm-general-emergency-interim", method: alias}
+- {mention: "State Farm emergency interim rate filing 2025", type: RateFiling, entity_id: "ratefiling:cdi:2025:state-farm-general-emergency-interim", method: embedding}
+- {mention: "Mercury Insurance rate filing 2025", type: RateFiling, entity_id: "ratefiling:cdi:2025:mercury", method: alias}
+- {mention: "CSAA rate filing 2025", type: RateFiling, entity_id: "ratefiling:cdi:2025:csaa", method: alias}
+# Type constraints: an Insurer mention never resolves to an Official, a fire never merges across years.
+- {mention: "Ricardo Lara", type: Insurer, entity_id: "pending:insurer:ricardo-lara", method: unresolved}
+- {mention: "Eaton Fire 2018", type: Fire, entity_id: "fire:eaton:2018", method: canonical}
+- {mention: "Eaton Fire", type: Fire, entity_id: "pending:fire:eaton-fire", method: unresolved}
+- {mention: "Acme Mutual Insurance", type: Insurer, entity_id: "pending:insurer:acme-mutual-insurance", method: unresolved}
