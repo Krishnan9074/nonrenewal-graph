@@ -5,11 +5,13 @@ import duckdb
 import pandas as pd
 
 from policygraph import CONFIG, EXTRACTIONS, GRAPH_DB, NORMALIZED
+from policygraph.names import humanize
 from policygraph.util import load_yaml, stable_id
 
 COLS = ["src", "rel", "dst", "valid_from", "valid_to", "props", "doc_id", "span", "extractor", "confidence"]
 MARKET = "market:ca:voluntary"  # CDI publishes ZIP totals only; no insurer identity is in the public data
 MORATORIUM_RE = re.compile(r"^moratorium:(\d{4}-\d{2}-\d{2}):")
+ACS = ["median_home_value", "median_year_built", "median_income"]
 
 
 def _year(s: pd.Series) -> pd.Series:
@@ -79,7 +81,7 @@ def llm_edges(manifest: dict, resolved: dict[str, str]) -> pd.DataFrame:
                 "props": json.dumps(e["props"]),
                 "doc_id": art["doc_id"],
                 "span": e["span"],
-                "extractor": f"llm:{art['model_id']}",
+                "extractor": f"llm:{art['model_id']}" + ("|zip_block" if e["props"].get("expanded_from") == "zip_block" else ""),
                 "confidence": e["confidence"],
             }
             for e in art["edges"]
@@ -87,21 +89,37 @@ def llm_edges(manifest: dict, resolved: dict[str, str]) -> pd.DataFrame:
     return pd.DataFrame(rows, columns=COLS)
 
 
-def entities_from(edges: pd.DataFrame, county_by_zip: dict[str, str]) -> pd.DataFrame:
+def zip_attrs(nr: pd.DataFrame, acs: pd.DataFrame) -> dict[str, dict]:
+    """County from CDI (blank for PO-box ZIPs) and ACS medians, keyed by ZIP; suppressed ACS cells stay null."""
+    county = nr.dropna(subset=["county"]).drop_duplicates("zip").set_index("zip").county
+    df = acs.set_index("zip")[ACS].join(county, how="outer")
+    return {z: {k: (None if pd.isna(v) else v) for k, v in r.items()} for z, r in df.to_dict("index").items()}
+
+
+def entities_from(edges: pd.DataFrame, attrs: dict[str, dict], names: dict[str, str], places: dict[str, str]) -> pd.DataFrame:
     ids = pd.Series(pd.unique(pd.concat([edges.src, edges.dst])))
-    attrs = [json.dumps({"county": county_by_zip[i[4:]]}) if i[4:] in county_by_zip else None for i in ids]
-    return pd.DataFrame({"entity_id": ids, "type": ids.str.split(":").str[0], "canonical_name": ids, "attrs": attrs})
+    return pd.DataFrame(
+        {
+            "entity_id": ids,
+            "type": ids.str.split(":").str[0],
+            "canonical_name": [names.get(i) or humanize(i, places) for i in ids],
+            "attrs": [json.dumps(attrs[i[4:]]) if i.startswith("zip:") and i[4:] in attrs else None for i in ids],
+        }
+    )
 
 
 def run() -> None:
-    nr, haz, fair, docs = (
-        pd.read_parquet(NORMALIZED / f"{n}.parquet") for n in ("cdi_nonrenewal", "hazard_share", "cdi_fair_plan", "documents")
+    nr, haz, fair, acs, docs = (
+        pd.read_parquet(NORMALIZED / f"{n}.parquet")
+        for n in ("cdi_nonrenewal", "hazard_share", "cdi_fair_plan", "acs", "documents")
     )
     resolved = pd.read_parquet(NORMALIZED / "resolved.parquet").set_index("mention").entity_id.to_dict()
+    names = {e["id"]: e["name"] for e in load_yaml(CONFIG / "entities.yaml")["entities"]}
     edges = pd.concat([deterministic_edges(nr, haz, fair), llm_edges(load_yaml(CONFIG / "extraction_manifest.yaml"), resolved)])
     key = edges[["src", "rel", "dst", "valid_from", "doc_id", "extractor"]]
     edges["edge_id"] = [stable_id(*r) for r in key.itertuples(index=False)]
-    ents = entities_from(edges, nr.dropna(subset=["county"]).drop_duplicates("zip").set_index("zip").county.to_dict())
+    ents = entities_from(edges, zip_attrs(nr, acs), names, load_yaml(CONFIG / "places.yaml"))
+    GRAPH_DB.unlink(missing_ok=True)  # the file is derived from the pinned inputs; history lives in those, not here
     with duckdb.connect(str(GRAPH_DB)) as con:
         con.execute((CONFIG / "schema.sql").read_text())
         for table, df in (("documents", docs), ("entities", ents), ("edges", edges)):
