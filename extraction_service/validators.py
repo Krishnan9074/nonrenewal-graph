@@ -9,7 +9,8 @@ _BILL = re.compile(r"(SB|AB)\s?\d+", re.I)
 
 
 def _norm(s: str) -> str:
-    return _WS.sub(" ", s).strip().lower()
+    """pypdf breaks words across lines ("Sanda\nlwood"), so whitespace is ignored entirely; characters are not."""
+    return _WS.sub("", s).lower()
 
 
 # Each check returns None when it passes, else a message the model can act on when retrying.

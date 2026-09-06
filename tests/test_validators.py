@@ -58,3 +58,10 @@ def test_type_constraint_rejected():
 def test_reversed_dates_rejected():
     _, errs = validate(extraction(edge(valid_to=date(2024, 1, 1))), CHUNK, ANCHORS)
     assert "dates" in errs[0]
+
+
+def test_span_ignores_line_breaks_inside_words():
+    chunk = "DATE: January 9, 2025. Sanda\nlwood Fire \n92373, 92320"
+    e = edge(src_mention="92373", span="Sandalwood Fire 92373, 92320")
+    x = extraction(e, extra=[Entity(mention="92373", type="ZIP")])
+    assert not validate(x, chunk, anchors(chunk))[1]

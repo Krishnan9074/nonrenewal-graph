@@ -1,6 +1,7 @@
 from dataclasses import dataclass
 
-TARGET, OVERLAP = 12000, 1200  # a CDI bulletin is ~6k chars; keep its ZIP lists and declaration date in one chunk
+TARGET, OVERLAP = 5000, 1500  # ~10 fires per chunk: the model drops ZIPs past ~200 per call; overlap covers a whole ZIP list
+HEAD = 3500  # the document head travels with every chunk as context: bulletins date their declarations on page 2-3
 
 
 @dataclass(frozen=True)
