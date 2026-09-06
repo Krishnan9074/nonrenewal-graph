@@ -1,0 +1,901 @@
+{
+ "entities": [
+  {
+   "mention": "Bobcat Fire 2020",
+   "type": "Fire"
+  },
+  {
+   "mention": "Oak Fire 2020",
+   "type": "Fire"
+  },
+  {
+   "mention": "Slater Fire 2020",
+   "type": "Fire"
+  },
+  {
+   "mention": "Bobcat Fire moratorium 2020-09-25",
+   "type": "Moratorium"
+  },
+  {
+   "mention": "Oak Fire moratorium 2020-09-25",
+   "type": "Moratorium"
+  },
+  {
+   "mention": "Slater Fire moratorium 2020-09-25",
+   "type": "Moratorium"
+  },
+  {
+   "mention": "Ricardo Lara",
+   "type": "Official"
+  },
+  {
+   "mention": "93550",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91702",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91016",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91006",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93552",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91011",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93543",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93553",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93544",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93563",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93535",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93551",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91706",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91001",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91107",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91750",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91773",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93534",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91711",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91780",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91732",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91214",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91784",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91722",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91741",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91007",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91042",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91206",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91740",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92301",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91010",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91103",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91208",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92371",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91731",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91024",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92397",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93510",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91020",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92372",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93591",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91008",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91759",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95490",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95437",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95470",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95454",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95469",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95428",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95427",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95417",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95429",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95543",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95531",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95567",
+   "type": "ZIP"
+  },
+  {
+   "mention": "96039",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95568",
+   "type": "ZIP"
+  }
+ ],
+ "edges": [
+  {
+   "src_mention": "Bobcat Fire 2020",
+   "rel": "TRIGGERED",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Oak Fire 2020",
+   "rel": "TRIGGERED",
+   "dst_mention": "Oak Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Oak Fire",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Slater Fire 2020",
+   "rel": "TRIGGERED",
+   "dst_mention": "Slater Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Slater Fire (Del Norte County)",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "ISSUED",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "FROM: Insurance Commissioner Ricardo Lara",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "ISSUED",
+   "dst_mention": "Oak Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "FROM: Insurance Commissioner Ricardo Lara",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "ISSUED",
+   "dst_mention": "Slater Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "FROM: Insurance Commissioner Ricardo Lara",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93550",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91702",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91016",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91006",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93552",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91011",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93543",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93553",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93544",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93563",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93535",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93551",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91706",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91001",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91107",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91750",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91773",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93534",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91711",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91780",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91732",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91214",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91784",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91722",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91741",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91007",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91042",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91206",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91740",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92301",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91010",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91103",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91208",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92371",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91731",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91024",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92397",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93510",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91020",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92372",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93591",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91008",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95490",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Oak Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Oak Fire \n95490, 95437, 95470, 95454, 95469, 95428, 95427, 95417, and 95429 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95437",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Oak Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Oak Fire \n95490, 95437, 95470, 95454, 95469, 95428, 95427, 95417, and 95429 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95470",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Oak Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Oak Fire \n95490, 95437, 95470, 95454, 95469, 95428, 95427, 95417, and 95429 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95454",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Oak Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Oak Fire \n95490, 95437, 95470, 95454, 95469, 95428, 95427, 95417, and 95429 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95469",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Oak Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Oak Fire \n95490, 95437, 95470, 95454, 95469, 95428, 95427, 95417, and 95429 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95428",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Oak Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Oak Fire \n95490, 95437, 95470, 95454, 95469, 95428, 95427, 95417, and 95429 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95427",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Oak Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Oak Fire \n95490, 95437, 95470, 95454, 95469, 95428, 95427, 95417, and 95429 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95417",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Oak Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Oak Fire \n95490, 95437, 95470, 95454, 95469, 95428, 95427, 95417, and 95429 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95429",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Oak Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Oak Fire \n95490, 95437, 95470, 95454, 95469, 95428, 95427, 95417, and 95429 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95543",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Slater Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Slater Fire (Del Norte County) \n95543, 95531, 95567, 96039, and 95568 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95531",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Slater Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Slater Fire (Del Norte County) \n95543, 95531, 95567, 96039, and 95568 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95567",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Slater Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Slater Fire (Del Norte County) \n95543, 95531, 95567, 96039, and 95568 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "96039",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Slater Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Slater Fire (Del Norte County) \n95543, 95531, 95567, 96039, and 95568 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95568",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Slater Fire moratorium 2020-09-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Slater Fire (Del Norte County) \n95543, 95531, 95567, 96039, and 95568 ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91759",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Bobcat Fire moratorium 2020-09-25",
+   "valid_from": "2020-09-25",
+   "valid_to": "2021-09-25",
+   "props": {
+    "expanded_from": "zip_block"
+   },
+   "span": "Bobcat Fire \n93550, 91702, 91016, 91006, 93552, 91011, 93543, 93553, 93544, 93563, 93535, \n93551, 91706, 91001, 91107, 91750, 91773, 93534, 91711, 91780, 91732, 91214, \n91784, 91722, 91741, 91007, 91042, 91206, 91740, 92301, 91010, 91103, 91208, \n92371, 91731, 91024, 92397, 93510, 91020, 92372, 93591, 91008, and 91759",
+   "confidence": 0.97
+  }
+ ],
+ "extraction_id": "0fb3fcb721db42b5e20d5c40d7e1bc62197735b54d4b1e18f7a060790effc9b7",
+ "doc_id": "4685c66b09f79e13ce4bda92c98594b82d90b9cc213294accba4b0daa8742063",
+ "schema_v": "1.0",
+ "prompt_v": "0148e8c632ad",
+ "model_id": "accounts/fireworks/models/gpt-oss-120b",
+ "status": "ok",
+ "rejected": []
+}

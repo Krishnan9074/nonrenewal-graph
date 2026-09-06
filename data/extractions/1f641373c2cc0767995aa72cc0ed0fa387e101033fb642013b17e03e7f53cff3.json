@@ -1,0 +1,3531 @@
+{
+ "entities": [
+  {
+   "mention": "Ricardo Lara",
+   "type": "Official"
+  },
+  {
+   "mention": "Saddleridge Fire 2019",
+   "type": "Fire"
+  },
+  {
+   "mention": "Eagle Fire 2019",
+   "type": "Fire"
+  },
+  {
+   "mention": "Sandalwood Fire 2019",
+   "type": "Fire"
+  },
+  {
+   "mention": "Reche Fire 2019",
+   "type": "Fire"
+  },
+  {
+   "mention": "Wolf Fire 2019",
+   "type": "Fire"
+  },
+  {
+   "mention": "Saddleridge Fire moratorium 2019-10-11",
+   "type": "Moratorium"
+  },
+  {
+   "mention": "Eagle Fire moratorium 2019-10-11",
+   "type": "Moratorium"
+  },
+  {
+   "mention": "Sandalwood Fire moratorium 2019-10-11",
+   "type": "Moratorium"
+  },
+  {
+   "mention": "Reche Fire moratorium 2019-10-11",
+   "type": "Moratorium"
+  },
+  {
+   "mention": "Wolf Fire moratorium 2019-10-11",
+   "type": "Moratorium"
+  },
+  {
+   "mention": "SB 824",
+   "type": "Regulation"
+  },
+  {
+   "mention": "91342",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91344",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91326",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91311",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91321",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91381",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93063",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91331",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91350",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91355",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91387",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91304",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91354",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91343",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91306",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91351",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91352",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91325",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91042",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91324",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91040",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91384",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91340",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91390",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91345",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93015",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93510",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93040",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91330",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95423",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95422",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95451",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95493",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95458",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95987",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95464",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95485",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95979",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95443",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92881",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92503",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92882",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92879",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92883",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92570",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92373",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92320",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92374",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92399",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92223",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92555",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92324",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92557",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92354",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92318",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92350",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92509",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92376",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92507",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92410",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92316",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92501",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92313",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92408",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92401",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92521",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92415",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92220",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92583",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92549",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92256",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92230",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92339",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92282",
+   "type": "ZIP"
+  },
+  {
+   "mention": "Kincade Fire 2019",
+   "type": "Fire"
+  },
+  {
+   "mention": "Kincade Fire moratorium 2019-10-25",
+   "type": "Moratorium"
+  },
+  {
+   "mention": "Tick Fire 2019",
+   "type": "Fire"
+  },
+  {
+   "mention": "Tick Fire moratorium 2019-10-25",
+   "type": "Moratorium"
+  },
+  {
+   "mention": "Getty Fire 2019",
+   "type": "Fire"
+  },
+  {
+   "mention": "Getty Fire moratorium 2019-10-27",
+   "type": "Moratorium"
+  },
+  {
+   "mention": "Hill Fire 2019",
+   "type": "Fire"
+  },
+  {
+   "mention": "Hill Fire moratorium 2019-10-27",
+   "type": "Moratorium"
+  },
+  {
+   "mention": "Maria Fire 2019",
+   "type": "Fire"
+  },
+  {
+   "mention": "Maria Fire moratorium 2019-10-27",
+   "type": "Moratorium"
+  },
+  {
+   "mention": "Old Water Fire 2019",
+   "type": "Fire"
+  },
+  {
+   "mention": "Old Water Fire moratorium 2019-10-27",
+   "type": "Moratorium"
+  },
+  {
+   "mention": "46 Fire 2019",
+   "type": "Fire"
+  },
+  {
+   "mention": "46 Fire moratorium 2019-10-27",
+   "type": "Moratorium"
+  },
+  {
+   "mention": "Hillside Fire 2019",
+   "type": "Fire"
+  },
+  {
+   "mention": "Hillside Fire moratorium 2019-10-27",
+   "type": "Moratorium"
+  },
+  {
+   "mention": "Easy Fire 2019",
+   "type": "Fire"
+  },
+  {
+   "mention": "Easy Fire moratorium 2019-10-27",
+   "type": "Moratorium"
+  },
+  {
+   "mention": "Sky Fire 2019",
+   "type": "Fire"
+  },
+  {
+   "mention": "Sky Fire moratorium 2019-10-27",
+   "type": "Moratorium"
+  },
+  {
+   "mention": "Glen Cove Fire 2019",
+   "type": "Fire"
+  },
+  {
+   "mention": "Glen Cove Fire moratorium 2019-10-27",
+   "type": "Moratorium"
+  },
+  {
+   "mention": "95403",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95404",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95492",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95448",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95425",
+   "type": "ZIP"
+  },
+  {
+   "mention": "94515",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95461",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95441",
+   "type": "ZIP"
+  },
+  {
+   "mention": "94928",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95401",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95409",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95407",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95405",
+   "type": "ZIP"
+  },
+  {
+   "mention": "94574",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95446",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95436",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95467",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95457",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95442",
+   "type": "ZIP"
+  },
+  {
+   "mention": "94951",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95445",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95421",
+   "type": "ZIP"
+  },
+  {
+   "mention": "94508",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95449",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95452",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95439",
+   "type": "ZIP"
+  },
+  {
+   "mention": "94567",
+   "type": "ZIP"
+  },
+  {
+   "mention": "94576",
+   "type": "ZIP"
+  },
+  {
+   "mention": "95426",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93551",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93532",
+   "type": "ZIP"
+  },
+  {
+   "mention": "90049",
+   "type": "ZIP"
+  },
+  {
+   "mention": "90025",
+   "type": "ZIP"
+  },
+  {
+   "mention": "90024",
+   "type": "ZIP"
+  },
+  {
+   "mention": "90272",
+   "type": "ZIP"
+  },
+  {
+   "mention": "90403",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91403",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91436",
+   "type": "ZIP"
+  },
+  {
+   "mention": "90402",
+   "type": "ZIP"
+  },
+  {
+   "mention": "90077",
+   "type": "ZIP"
+  },
+  {
+   "mention": "90095",
+   "type": "ZIP"
+  },
+  {
+   "mention": "90073",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92504",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91752",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92337",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93060",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93066",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93003",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93010",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93012",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93021",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93001",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93036",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93004",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93023",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93022",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92404",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92346",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92407",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92405",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92325",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92322",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92506",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92508",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92411",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92345",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92308",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92314",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92315",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92352",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92344",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92377",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92371",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92382",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92397",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92359",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92386",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92391",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92341",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92333",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92321",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92358",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91759",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92317",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92378",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92385",
+   "type": "ZIP"
+  },
+  {
+   "mention": "93065",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91360",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91320",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91362",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91361",
+   "type": "ZIP"
+  },
+  {
+   "mention": "91307",
+   "type": "ZIP"
+  },
+  {
+   "mention": "94553",
+   "type": "ZIP"
+  },
+  {
+   "mention": "94525",
+   "type": "ZIP"
+  },
+  {
+   "mention": "94523",
+   "type": "ZIP"
+  },
+  {
+   "mention": "94549",
+   "type": "ZIP"
+  },
+  {
+   "mention": "94520",
+   "type": "ZIP"
+  },
+  {
+   "mention": "94530",
+   "type": "ZIP"
+  },
+  {
+   "mention": "94803",
+   "type": "ZIP"
+  },
+  {
+   "mention": "94547",
+   "type": "ZIP"
+  },
+  {
+   "mention": "94563",
+   "type": "ZIP"
+  },
+  {
+   "mention": "94564",
+   "type": "ZIP"
+  },
+  {
+   "mention": "94708",
+   "type": "ZIP"
+  },
+  {
+   "mention": "94569",
+   "type": "ZIP"
+  },
+  {
+   "mention": "94591",
+   "type": "ZIP"
+  },
+  {
+   "mention": "94534",
+   "type": "ZIP"
+  },
+  {
+   "mention": "94590",
+   "type": "ZIP"
+  },
+  {
+   "mention": "94510",
+   "type": "ZIP"
+  },
+  {
+   "mention": "94589",
+   "type": "ZIP"
+  },
+  {
+   "mention": "94503",
+   "type": "ZIP"
+  },
+  {
+   "mention": "92505",
+   "type": "ZIP"
+  }
+ ],
+ "edges": [
+  {
+   "src_mention": "Saddleridge Fire 2019",
+   "rel": "TRIGGERED",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": "2019-10-11",
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Eagle Fire 2019",
+   "rel": "TRIGGERED",
+   "dst_mention": "Eagle Fire moratorium 2019-10-11",
+   "valid_from": "2019-10-11",
+   "valid_to": null,
+   "props": {},
+   "span": "Eagle Fire",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Sandalwood Fire 2019",
+   "rel": "TRIGGERED",
+   "dst_mention": "Sandalwood Fire moratorium 2019-10-11",
+   "valid_from": "2019-10-11",
+   "valid_to": null,
+   "props": {},
+   "span": "Sandalwood Fire",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Reche Fire 2019",
+   "rel": "TRIGGERED",
+   "dst_mention": "Reche Fire moratorium 2019-10-11",
+   "valid_from": "2019-10-11",
+   "valid_to": null,
+   "props": {},
+   "span": "Reche Fire",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Wolf Fire 2019",
+   "rel": "TRIGGERED",
+   "dst_mention": "Wolf Fire moratorium 2019-10-11",
+   "valid_from": "2019-10-11",
+   "valid_to": null,
+   "props": {},
+   "span": "Wolf Fire",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "ISSUED",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": "2020-02-03",
+   "valid_to": null,
+   "props": {},
+   "span": "DATE: February 3 , 2020",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "ISSUED",
+   "dst_mention": "Eagle Fire moratorium 2019-10-11",
+   "valid_from": "2020-02-03",
+   "valid_to": null,
+   "props": {},
+   "span": "DATE: February 3 , 2020",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "ISSUED",
+   "dst_mention": "Sandalwood Fire moratorium 2019-10-11",
+   "valid_from": "2020-02-03",
+   "valid_to": null,
+   "props": {},
+   "span": "DATE: February 3 , 2020",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "ISSUED",
+   "dst_mention": "Reche Fire moratorium 2019-10-11",
+   "valid_from": "2020-02-03",
+   "valid_to": null,
+   "props": {},
+   "span": "DATE: February 3 , 2020",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "ISSUED",
+   "dst_mention": "Wolf Fire moratorium 2019-10-11",
+   "valid_from": "2020-02-03",
+   "valid_to": null,
+   "props": {},
+   "span": "DATE: February 3 , 2020",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "AUTHORED",
+   "dst_mention": "SB 824",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Senate Bill 824 (Lara",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91342",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91344",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91326",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91311",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91321",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91381",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93063",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91331",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91350",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91355",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91387",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91304",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91354",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91343",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91306",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91351",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91352",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91325",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91042",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91324",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91040",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91384",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91340",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91390",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91345",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93015",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93510",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93040",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91330",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Saddleridge Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Saddleridge Fire \n91342, 91344, 91326, 91311, 91321, 91381, 93063, 91331, 91350, 91355, 91387, 91304, 91354, \n91343, 91306, 91351, 91352, 91325, 91042, 91324, 91040, 91384, 91340, 91390, 91345, 93015, \n93510, 93040, and 91330.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95423",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Eagle Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Eagle Fire (Lake County) \n95423, 95422, 95451, 95493, 95458, 95987, 95464, 95485, 95979, and 95443.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95422",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Eagle Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Eagle Fire (Lake County) \n95423, 95422, 95451, 95493, 95458, 95987, 95464, 95485, 95979, and 95443.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95451",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Eagle Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Eagle Fire (Lake County) \n95423, 95422, 95451, 95493, 95458, 95987, 95464, 95485, 95979, and 95443.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95493",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Eagle Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Eagle Fire (Lake County) \n95423, 95422, 95451, 95493, 95458, 95987, 95464, 95485, 95979, and 95443.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95458",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Eagle Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Eagle Fire (Lake County) \n95423, 95422, 95451, 95493, 95458, 95987, 95464, 95485, 95979, and 95443.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95987",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Eagle Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Eagle Fire (Lake County) \n95423, 95422, 95451, 95493, 95458, 95987, 95464, 95485, 95979, and 95443.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95464",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Eagle Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Eagle Fire (Lake County) \n95423, 95422, 95451, 95493, 95458, 95987, 95464, 95485, 95979, and 95443.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95485",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Eagle Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Eagle Fire (Lake County) \n95423, 95422, 95451, 95493, 95458, 95987, 95464, 95485, 95979, and 95443.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95979",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Eagle Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Eagle Fire (Lake County) \n95423, 95422, 95451, 95493, 95458, 95987, 95464, 95485, 95979, and 95443.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95443",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Eagle Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Eagle Fire (Lake County) \n95423, 95422, 95451, 95493, 95458, 95987, 95464, 95485, 95979, and 95443.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92881",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Eagle Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Eagle Fire  (River side County)8 \n92881, 92503, 92882, 92879, 92883, 92570.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92503",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Eagle Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Eagle Fire  (River side County)8 \n92881, 92503, 92882, 92879, 92883, 92570.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92882",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Eagle Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Eagle Fire  (River side County)8 \n92881, 92503, 92882, 92879, 92883, 92570.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92879",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Eagle Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Eagle Fire  (River side County)8 \n92881, 92503, 92882, 92879, 92883, 92570.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92883",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Eagle Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Eagle Fire  (River side County)8 \n92881, 92503, 92882, 92879, 92883, 92570.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92570",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Eagle Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Eagle Fire  (River side County)8 \n92881, 92503, 92882, 92879, 92883, 92570.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92373",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Sandalwood Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Sandalwood Fire \n92373, 92320, 92374, 92399, 92223, 92555, 92324, 92557, 92354, 92318, and 92350.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92320",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Sandalwood Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Sandalwood Fire \n92373, 92320, 92374, 92399, 92223, 92555, 92324, 92557, 92354, 92318, and 92350.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92374",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Sandalwood Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Sandalwood Fire \n92373, 92320, 92374, 92399, 92223, 92555, 92324, 92557, 92354, 92318, and 92350.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92399",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Sandalwood Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Sandalwood Fire \n92373, 92320, 92374, 92399, 92223, 92555, 92324, 92557, 92354, 92318, and 92350.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92223",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Sandalwood Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Sandalwood Fire \n92373, 92320, 92374, 92399, 92223, 92555, 92324, 92557, 92354, 92318, and 92350.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92555",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Sandalwood Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Sandalwood Fire \n92373, 92320, 92374, 92399, 92223, 92555, 92324, 92557, 92354, 92318, and 92350.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92324",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Sandalwood Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Sandalwood Fire \n92373, 92320, 92374, 92399, 92223, 92555, 92324, 92557, 92354, 92318, and 92350.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92557",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Sandalwood Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Sandalwood Fire \n92373, 92320, 92374, 92399, 92223, 92555, 92324, 92557, 92354, 92318, and 92350.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92354",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Sandalwood Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Sandalwood Fire \n92373, 92320, 92374, 92399, 92223, 92555, 92324, 92557, 92354, 92318, and 92350.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92318",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Sandalwood Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Sandalwood Fire \n92373, 92320, 92374, 92399, 92223, 92555, 92324, 92557, 92354, 92318, and 92350.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92350",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Sandalwood Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Sandalwood Fire \n92373, 92320, 92374, 92399, 92223, 92555, 92324, 92557, 92354, 92318, and 92350.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92324",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Reche Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Reche Fire \n92324, 92509, 92376, 92557, 92507, 92373, 92410, 92354, 92316, 92501, 92313, 92408, 92401, 92318, 92350, 92521, and 92415.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92509",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Reche Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Reche Fire \n92324, 92509, 92376, 92557, 92507, 92373, 92410, 92354, 92316, 92501, 92313, 92408, 92401, 92318, 92350, 92521, and 92415.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92376",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Reche Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Reche Fire \n92324, 92509, 92376, 92557, 92507, 92373, 92410, 92354, 92316, 92501, 92313, 92408, 92401, 92318, 92350, 92521, and 92415.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92557",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Reche Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Reche Fire \n92324, 92509, 92376, 92557, 92507, 92373, 92410, 92354, 92316, 92501, 92313, 92408, 92401, 92318, 92350, 92521, and 92415.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92507",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Reche Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Reche Fire \n92324, 92509, 92376, 92557, 92507, 92373, 92410, 92354, 92316, 92501, 92313, 92408, 92401, 92318, 92350, 92521, and 92415.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92373",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Reche Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Reche Fire \n92324, 92509, 92376, 92557, 92507, 92373, 92410, 92354, 92316, 92501, 92313, 92408, 92401, 92318, 92350, 92521, and 92415.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92410",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Reche Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Reche Fire \n92324, 92509, 92376, 92557, 92507, 92373, 92410, 92354, 92316, 92501, 92313, 92408, 92401, 92318, 92350, 92521, and 92415.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92354",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Reche Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Reche Fire \n92324, 92509, 92376, 92557, 92507, 92373, 92410, 92354, 92316, 92501, 92313, 92408, 92401, 92318, 92350, 92521, and 92415.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92316",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Reche Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Reche Fire \n92324, 92509, 92376, 92557, 92507, 92373, 92410, 92354, 92316, 92501, 92313, 92408, 92401, 92318, 92350, 92521, and 92415.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92501",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Reche Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Reche Fire \n92324, 92509, 92376, 92557, 92507, 92373, 92410, 92354, 92316, 92501, 92313, 92408, 92401, 92318, 92350, 92521, and 92415.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92313",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Reche Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Reche Fire \n92324, 92509, 92376, 92557, 92507, 92373, 92410, 92354, 92316, 92501, 92313, 92408, 92401, 92318, 92350, 92521, and 92415.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92408",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Reche Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Reche Fire \n92324, 92509, 92376, 92557, 92507, 92373, 92410, 92354, 92316, 92501, 92313, 92408, 92401, 92318, 92350, 92521, and 92415.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92401",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Reche Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Reche Fire \n92324, 92509, 92376, 92557, 92507, 92373, 92410, 92354, 92316, 92501, 92313, 92408, 92401, 92318, 92350, 92521, and 92415.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92318",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Reche Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Reche Fire \n92324, 92509, 92376, 92557, 92507, 92373, 92410, 92354, 92316, 92501, 92313, 92408, 92401, 92318, 92350, 92521, and 92415.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92350",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Reche Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Reche Fire \n92324, 92509, 92376, 92557, 92507, 92373, 92410, 92354, 92316, 92501, 92313, 92408, 92401, 92318, 92350, 92521, and 92415.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92521",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Reche Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Reche Fire \n92324, 92509, 92376, 92557, 92507, 92373, 92410, 92354, 92316, 92501, 92313, 92408, 92401, 92318, 92350, 92521, and 92415.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92415",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Reche Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Reche Fire \n92324, 92509, 92376, 92557, 92507, 92373, 92410, 92354, 92316, 92501, 92313, 92408, 92401, 92318, 92350, 92521, and 92415.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92220",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Wolf Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Wolf Fire \n92220, 92223, 92399, 92583, 92549, 92256, 92230, 92339, and 92282.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92223",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Wolf Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Wolf Fire \n92220, 92223, 92399, 92583, 92549, 92256, 92230, 92339, and 92282.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92399",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Wolf Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Wolf Fire \n92220, 92223, 92399, 92583, 92549, 92256, 92230, 92339, and 92282.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92583",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Wolf Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Wolf Fire \n92220, 92223, 92399, 92583, 92549, 92256, 92230, 92339, and 92282.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92549",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Wolf Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Wolf Fire \n92220, 92223, 92399, 92583, 92549, 92256, 92230, 92339, and 92282.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92256",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Wolf Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Wolf Fire \n92220, 92223, 92399, 92583, 92549, 92256, 92230, 92339, and 92282.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92230",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Wolf Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Wolf Fire \n92220, 92223, 92399, 92583, 92549, 92256, 92230, 92339, and 92282.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92339",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Wolf Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Wolf Fire \n92220, 92223, 92399, 92583, 92549, 92256, 92230, 92339, and 92282.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92282",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Wolf Fire moratorium 2019-10-11",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Wolf Fire \n92220, 92223, 92399, 92583, 92549, 92256, 92230, 92339, and 92282.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Kincade Fire 2019",
+   "rel": "TRIGGERED",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "ISSUED",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Commissioner",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95403",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95404",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95492",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95448",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95425",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "94515",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95461",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95441",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "94928",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95401",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95409",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95407",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95405",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95451",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "94574",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95446",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95436",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95467",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95457",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95442",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "94951",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95445",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95421",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "94508",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95449",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95452",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95439",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "94567",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "94576",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "95426",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Kincade Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Kincade Fire \n95403, 95404, 95492, 95448, 95425, 94515, 95461, 95441, 94928, 95401, 95409, 95407, 95405, \n95451, 94574, 95446, 95436, 95467, 95457, 95442, 94951, 95445, 95421, 94508, 95449, 95452, \n95439, 94567, 94576, and 95426.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Tick Fire 2019",
+   "rel": "TRIGGERED",
+   "dst_mention": "Tick Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Tick Fire",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "ISSUED",
+   "dst_mention": "Tick Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Commissioner",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91387",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Tick Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Tick Fire \n91387, 91351, 91390, 91342, 93551, 91350, 91354, 91321, 91384, 93510, and 93532.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91351",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Tick Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Tick Fire \n91387, 91351, 91390, 91342, 93551, 91350, 91354, 91321, 91384, 93510, and 93532.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91390",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Tick Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Tick Fire \n91387, 91351, 91390, 91342, 93551, 91350, 91354, 91321, 91384, 93510, and 93532.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91342",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Tick Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Tick Fire \n91387, 91351, 91390, 91342, 93551, 91350, 91354, 91321, 91384, 93510, and 93532.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93551",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Tick Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Tick Fire \n91387, 91351, 91390, 91342, 93551, 91350, 91354, 91321, 91384, 93510, and 93532.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91350",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Tick Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Tick Fire \n91387, 91351, 91390, 91342, 93551, 91350, 91354, 91321, 91384, 93510, and 93532.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91354",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Tick Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Tick Fire \n91387, 91351, 91390, 91342, 93551, 91350, 91354, 91321, 91384, 93510, and 93532.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91321",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Tick Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Tick Fire \n91387, 91351, 91390, 91342, 93551, 91350, 91354, 91321, 91384, 93510, and 93532.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91384",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Tick Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Tick Fire \n91387, 91351, 91390, 91342, 93551, 91350, 91354, 91321, 91384, 93510, and 93532.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93510",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Tick Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Tick Fire \n91387, 91351, 91390, 91342, 93551, 91350, 91354, 91321, 91384, 93510, and 93532.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93532",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Tick Fire moratorium 2019-10-25",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Tick Fire \n91387, 91351, 91390, 91342, 93551, 91350, 91354, 91321, 91384, 93510, and 93532.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Getty Fire 2019",
+   "rel": "TRIGGERED",
+   "dst_mention": "Getty Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Getty Fire",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "ISSUED",
+   "dst_mention": "Getty Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Commissioner",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "90049",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Getty Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Getty Fire \n90049, 90025, 90024, 90272, 90403, 91403, 91436, 90402, 90077, 90095, and 90073.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "90025",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Getty Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Getty Fire \n90049, 90025, 90024, 90272, 90403, 91403, 91436, 90402, 90077, 90095, and 90073.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "90024",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Getty Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Getty Fire \n90049, 90025, 90024, 90272, 90403, 91403, 91436, 90402, 90077, 90095, and 90073.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "90272",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Getty Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Getty Fire \n90049, 90025, 90024, 90272, 90403, 91403, 91436, 90402, 90077, 90095, and 90073.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "90403",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Getty Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Getty Fire \n90049, 90025, 90024, 90272, 90403, 91403, 91436, 90402, 90077, 90095, and 90073.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91403",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Getty Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Getty Fire \n90049, 90025, 90024, 90272, 90403, 91403, 91436, 90402, 90077, 90095, and 90073.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91436",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Getty Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Getty Fire \n90049, 90025, 90024, 90272, 90403, 91403, 91436, 90402, 90077, 90095, and 90073.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "90402",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Getty Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Getty Fire \n90049, 90025, 90024, 90272, 90403, 91403, 91436, 90402, 90077, 90095, and 90073.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "90077",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Getty Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Getty Fire \n90049, 90025, 90024, 90272, 90403, 91403, 91436, 90402, 90077, 90095, and 90073.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "90095",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Getty Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Getty Fire \n90049, 90025, 90024, 90272, 90403, 91403, 91436, 90402, 90077, 90095, and 90073.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "90073",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Getty Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Getty Fire \n90049, 90025, 90024, 90272, 90403, 91403, 91436, 90402, 90077, 90095, and 90073.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Hill Fire 2019",
+   "rel": "TRIGGERED",
+   "dst_mention": "Hill Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hill Fire",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "ISSUED",
+   "dst_mention": "Hill Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Commissioner",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92509",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hill Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hill Fire \n92509, 92504, 92324, 92505, 91752, 92337, 92316, and 92501.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92504",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hill Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hill Fire \n92509, 92504, 92324, 92505, 91752, 92337, 92316, and 92501.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92324",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hill Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hill Fire \n92509, 92504, 92324, 92505, 91752, 92337, 92316, and 92501.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91752",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hill Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hill Fire \n92509, 92504, 92324, 92505, 91752, 92337, 92316, and 92501.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92337",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hill Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hill Fire \n92509, 92504, 92324, 92505, 91752, 92337, 92316, and 92501.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92316",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hill Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hill Fire \n92509, 92504, 92324, 92505, 91752, 92337, 92316, and 92501.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92501",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hill Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hill Fire \n92509, 92504, 92324, 92505, 91752, 92337, 92316, and 92501.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Maria Fire 2019",
+   "rel": "TRIGGERED",
+   "dst_mention": "Maria Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Maria Fire",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "ISSUED",
+   "dst_mention": "Maria Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Commissioner",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93060",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Maria Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Maria Fire \n93060, 93066, 93003, 93010, 93012, 93021, 93001, 93036, 93004, 93023, 93015, and 93022.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93066",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Maria Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Maria Fire \n93060, 93066, 93003, 93010, 93012, 93021, 93001, 93036, 93004, 93023, 93015, and 93022.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93003",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Maria Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Maria Fire \n93060, 93066, 93003, 93010, 93012, 93021, 93001, 93036, 93004, 93023, 93015, and 93022.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93010",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Maria Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Maria Fire \n93060, 93066, 93003, 93010, 93012, 93021, 93001, 93036, 93004, 93023, 93015, and 93022.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93012",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Maria Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Maria Fire \n93060, 93066, 93003, 93010, 93012, 93021, 93001, 93036, 93004, 93023, 93015, and 93022.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93021",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Maria Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Maria Fire \n93060, 93066, 93003, 93010, 93012, 93021, 93001, 93036, 93004, 93023, 93015, and 93022.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93001",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Maria Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Maria Fire \n93060, 93066, 93003, 93010, 93012, 93021, 93001, 93036, 93004, 93023, 93015, and 93022.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93036",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Maria Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Maria Fire \n93060, 93066, 93003, 93010, 93012, 93021, 93001, 93036, 93004, 93023, 93015, and 93022.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93004",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Maria Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Maria Fire \n93060, 93066, 93003, 93010, 93012, 93021, 93001, 93036, 93004, 93023, 93015, and 93022.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93023",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Maria Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Maria Fire \n93060, 93066, 93003, 93010, 93012, 93021, 93001, 93036, 93004, 93023, 93015, and 93022.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93015",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Maria Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Maria Fire \n93060, 93066, 93003, 93010, 93012, 93021, 93001, 93036, 93004, 93023, 93015, and 93022.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93022",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Maria Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Maria Fire \n93060, 93066, 93003, 93010, 93012, 93021, 93001, 93036, 93004, 93023, 93015, and 93022.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Old Water Fire 2019",
+   "rel": "TRIGGERED",
+   "dst_mention": "Old Water Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "[Old] Water Fire",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "ISSUED",
+   "dst_mention": "Old Water Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Commissioner",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92404",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Old Water Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "[Old] Water Fire \n92404, 92346, 92407, 92410, 92405, 92325, and 92322.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92346",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Old Water Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "[Old] Water Fire \n92404, 92346, 92407, 92410, 92405, 92325, and 92322.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92407",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Old Water Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "[Old] Water Fire \n92404, 92346, 92407, 92410, 92405, 92325, and 92322.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92410",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Old Water Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "[Old] Water Fire \n92404, 92346, 92407, 92410, 92405, 92325, and 92322.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92405",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Old Water Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "[Old] Water Fire \n92404, 92346, 92407, 92410, 92405, 92325, and 92322.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92325",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Old Water Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "[Old] Water Fire \n92404, 92346, 92407, 92410, 92405, 92325, and 92322.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92322",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Old Water Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "[Old] Water Fire \n92404, 92346, 92407, 92410, 92405, 92325, and 92322.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "46 Fire 2019",
+   "rel": "TRIGGERED",
+   "dst_mention": "46 Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "46 Fire ",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "ISSUED",
+   "dst_mention": "46 Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Commissioner",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92509",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "46 Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "46 Fire \n92509, 92504, 92503, 92506, 92324, 92505, 92570, 92508, 91752, 92337, 92316, and 92501.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92504",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "46 Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "46 Fire \n92509, 92504, 92503, 92506, 92324, 92505, 92570, 92508, 91752, 92337, 92316, and 92501.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92503",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "46 Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "46 Fire \n92509, 92504, 92503, 92506, 92324, 92505, 92570, 92508, 91752, 92337, 92316, and 92501.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92506",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "46 Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "46 Fire \n92509, 92504, 92503, 92506, 92324, 92505, 92570, 92508, 91752, 92337, 92316, and 92501.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92324",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "46 Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "46 Fire \n92509, 92504, 92503, 92506, 92324, 92505, 92570, 92508, 91752, 92337, 92316, and 92501.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92570",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "46 Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "46 Fire \n92509, 92504, 92503, 92506, 92324, 92505, 92570, 92508, 91752, 92337, 92316, and 92501.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92508",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "46 Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "46 Fire \n92509, 92504, 92503, 92506, 92324, 92505, 92570, 92508, 91752, 92337, 92316, and 92501.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91752",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "46 Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "46 Fire \n92509, 92504, 92503, 92506, 92324, 92505, 92570, 92508, 91752, 92337, 92316, and 92501.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92337",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "46 Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "46 Fire \n92509, 92504, 92503, 92506, 92324, 92505, 92570, 92508, 91752, 92337, 92316, and 92501.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92316",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "46 Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "46 Fire \n92509, 92504, 92503, 92506, 92324, 92505, 92570, 92508, 91752, 92337, 92316, and 92501.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92501",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "46 Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "46 Fire \n92509, 92504, 92503, 92506, 92324, 92505, 92570, 92508, 91752, 92337, 92316, and 92501.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Hillside Fire 2019",
+   "rel": "TRIGGERED",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "ISSUED",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Commissioner",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92407",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92345",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92376",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92346",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92308",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92314",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92404",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92315",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92405",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92352",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92344",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92377",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92371",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92411",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92325",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92382",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92397",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92359",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92386",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92391",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92341",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92333",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92322",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92321",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92358",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91759",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92317",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92378",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92385",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hillside Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hillside Fire \n92407, 92345, 92376,  92346, 92308, 92314, 92404, 92315,  92405,  92352,  92344,  92377, 92371,  \n92411, 92325, 92382, 92397,   92359, 92386, 92391, 92341, 92333, 92322, 92321, 92358, 91759, \n92317, 92378, and 92385.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Easy Fire 2019",
+   "rel": "TRIGGERED",
+   "dst_mention": "Easy Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Easy Fire",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "ISSUED",
+   "dst_mention": "Easy Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Commissioner",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93065",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Easy Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Easy Fire \n93065, 91360, 93021, 93063, 91320, 93012, 91362, 91361, 91307, 93015, and 93066.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91360",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Easy Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Easy Fire \n93065, 91360, 93021, 93063, 91320, 93012, 91362, 91361, 91307, 93015, and 93066.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93021",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Easy Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Easy Fire \n93065, 91360, 93021, 93063, 91320, 93012, 91362, 91361, 91307, 93015, and 93066.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93063",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Easy Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Easy Fire \n93065, 91360, 93021, 93063, 91320, 93012, 91362, 91361, 91307, 93015, and 93066.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91320",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Easy Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Easy Fire \n93065, 91360, 93021, 93063, 91320, 93012, 91362, 91361, 91307, 93015, and 93066.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93012",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Easy Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Easy Fire \n93065, 91360, 93021, 93063, 91320, 93012, 91362, 91361, 91307, 93015, and 93066.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91362",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Easy Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Easy Fire \n93065, 91360, 93021, 93063, 91320, 93012, 91362, 91361, 91307, 93015, and 93066.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91361",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Easy Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Easy Fire \n93065, 91360, 93021, 93063, 91320, 93012, 91362, 91361, 91307, 93015, and 93066.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "91307",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Easy Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Easy Fire \n93065, 91360, 93021, 93063, 91320, 93012, 91362, 91361, 91307, 93015, and 93066.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93015",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Easy Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Easy Fire \n93065, 91360, 93021, 93063, 91320, 93012, 91362, 91361, 91307, 93015, and 93066.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "93066",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Easy Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Easy Fire \n93065, 91360, 93021, 93063, 91320, 93012, 91362, 91361, 91307, 93015, and 93066.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Sky Fire 2019",
+   "rel": "TRIGGERED",
+   "dst_mention": "Sky Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Sky Fire",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "ISSUED",
+   "dst_mention": "Sky Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Commissioner",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "94553",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Sky Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Sky Fire \n94553, 9 4572, 94525, 94523, 94549, 94520, 94530, 94803, 94547, 94563, 94564, 94708, and \n94569.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "94525",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Sky Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Sky Fire \n94553, 9 4572, 94525, 94523, 94549, 94520, 94530, 94803, 94547, 94563, 94564, 94708, and \n94569.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "94523",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Sky Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Sky Fire \n94553, 9 4572, 94525, 94523, 94549, 94520, 94530, 94803, 94547, 94563, 94564, 94708, and \n94569.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "94549",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Sky Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Sky Fire \n94553, 9 4572, 94525, 94523, 94549, 94520, 94530, 94803, 94547, 94563, 94564, 94708, and \n94569.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "94520",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Sky Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Sky Fire \n94553, 9 4572, 94525, 94523, 94549, 94520, 94530, 94803, 94547, 94563, 94564, 94708, and \n94569.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "94530",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Sky Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Sky Fire \n94553, 9 4572, 94525, 94523, 94549, 94520, 94530, 94803, 94547, 94563, 94564, 94708, and \n94569.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "94803",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Sky Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Sky Fire \n94553, 9 4572, 94525, 94523, 94549, 94520, 94530, 94803, 94547, 94563, 94564, 94708, and \n94569.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "94547",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Sky Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Sky Fire \n94553, 9 4572, 94525, 94523, 94549, 94520, 94530, 94803, 94547, 94563, 94564, 94708, and \n94569.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "94563",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Sky Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Sky Fire \n94553, 9 4572, 94525, 94523, 94549, 94520, 94530, 94803, 94547, 94563, 94564, 94708, and \n94569.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "94564",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Sky Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Sky Fire \n94553, 9 4572, 94525, 94523, 94549, 94520, 94530, 94803, 94547, 94563, 94564, 94708, and \n94569.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "94708",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Sky Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Sky Fire \n94553, 9 4572, 94525, 94523, 94549, 94520, 94530, 94803, 94547, 94563, 94564, 94708, and \n94569.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "94569",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Sky Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Sky Fire \n94553, 9 4572, 94525, 94523, 94549, 94520, 94530, 94803, 94547, 94563, 94564, 94708, and \n94569.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Glen Cove Fire 2019",
+   "rel": "TRIGGERED",
+   "dst_mention": "Glen Cove Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Glen Cove Fire",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "ISSUED",
+   "dst_mention": "Glen Cove Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Commissioner",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "94591",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Glen Cove Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Glen Cove Fire \n94591,\n 94534, 94590, 94510, 94589, and 94503.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "94534",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Glen Cove Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Glen Cove Fire \n94591,\n 94534, 94590, 94510, 94589, and 94503.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "94590",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Glen Cove Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Glen Cove Fire \n94591,\n 94534, 94590, 94510, 94589, and 94503.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "94510",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Glen Cove Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Glen Cove Fire \n94591,\n 94534, 94590, 94510, 94589, and 94503.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "94589",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Glen Cove Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Glen Cove Fire \n94591,\n 94534, 94590, 94510, 94589, and 94503.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "94503",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Glen Cove Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Glen Cove Fire \n94591,\n 94534, 94590, 94510, 94589, and 94503.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92505",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "Hill Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "Hill Fire \n92509, 92504, 92324, 92505, 91752, 92337, 92316, and 92501.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "92505",
+   "rel": "PROTECTED_BY",
+   "dst_mention": "46 Fire moratorium 2019-10-27",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "46 Fire \n92509, 92504, 92503, 92506, 92324, 92505, 92570, 92508, 91752, 92337, 92316, and 92501.",
+   "confidence": 1.0
+  }
+ ],
+ "extraction_id": "1f641373c2cc0767995aa72cc0ed0fa387e101033fb642013b17e03e7f53cff3",
+ "doc_id": "3004cfc5afe4cb37ca58c5096a52dbf9d4005cd3e9014f70bfcd1e09667bc383",
+ "schema_v": "1.0",
+ "prompt_v": "0148e8c632ad",
+ "model_id": "accounts/fireworks/models/gpt-oss-120b",
+ "status": "ok",
+ "rejected": [
+  "92324 -TRIGGERED-> Reche Fire moratorium 2019-10-11: types ZIP->Moratorium not allowed for TRIGGERED; need Fire->Moratorium"
+ ]
+}

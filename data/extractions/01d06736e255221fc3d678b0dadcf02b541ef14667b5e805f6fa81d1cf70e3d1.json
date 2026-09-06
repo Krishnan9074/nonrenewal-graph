@@ -1,0 +1,35 @@
+{
+ "entities": [
+  {
+   "mention": "State Farm",
+   "type": "Insurer"
+  },
+  {
+   "mention": "Ricardo Lara",
+   "type": "Official"
+  },
+  {
+   "mention": "State Farm emergency interim rate filing 2025",
+   "type": "RateFiling"
+  }
+ ],
+ "edges": [
+  {
+   "src_mention": "State Farm",
+   "rel": "FILED",
+   "dst_mention": "State Farm emergency interim rate filing 2025",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "State Farm has requested emergency rate increases, effective May 1, 2025: 22% for Non-Tenant homeowners, 15% for Tenants (Renters), 15% for Tenants (Condominium Unitowners), and 38% for Rental Dwelling.",
+   "confidence": 1.0
+  }
+ ],
+ "extraction_id": "01d06736e255221fc3d678b0dadcf02b541ef14667b5e805f6fa81d1cf70e3d1",
+ "doc_id": "8f135be22f8fb9edae7232cb91992d3554c2f6cc75324d244d47d572b537e696",
+ "schema_v": "1.0",
+ "prompt_v": "0148e8c632ad",
+ "model_id": "accounts/fireworks/models/gpt-oss-120b",
+ "status": "ok",
+ "rejected": []
+}

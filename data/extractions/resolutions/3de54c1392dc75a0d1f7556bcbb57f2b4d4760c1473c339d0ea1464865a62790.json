@@ -1,0 +1,11 @@
+{
+ "mention": "Eagle Fire (River side County) moratorium 2019-10-11",
+ "type": "Moratorium",
+ "entity_id": null,
+ "method": "unresolved",
+ "confidence": 0.0,
+ "nearest": null,
+ "score": 0.0,
+ "embed_model": "nomic-ai/nomic-embed-text-v1.5",
+ "judge_model": "accounts/fireworks/models/gpt-oss-120b"
+}

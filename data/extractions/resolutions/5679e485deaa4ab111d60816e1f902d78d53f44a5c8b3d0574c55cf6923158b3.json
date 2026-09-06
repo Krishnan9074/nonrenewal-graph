@@ -1,0 +1,11 @@
+{
+ "mention": "SHF Lightning Fires 2020 moratorium 2020-08-18",
+ "type": "Moratorium",
+ "entity_id": null,
+ "method": "unresolved",
+ "confidence": 0.0,
+ "nearest": null,
+ "score": 0.0,
+ "embed_model": "nomic-ai/nomic-embed-text-v1.5",
+ "judge_model": "accounts/fireworks/models/gpt-oss-120b"
+}

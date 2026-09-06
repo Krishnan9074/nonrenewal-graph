@@ -1,0 +1,11 @@
+{
+ "mention": "wildfire catastrophe modeling regulation",
+ "type": "Regulation",
+ "entity_id": "regulation:ca:catastrophe-modeling-2024",
+ "method": "llm_judge",
+ "confidence": 0.96,
+ "nearest": "regulation:ca:catastrophe-modeling-2024",
+ "score": 0.9019546698281876,
+ "embed_model": "nomic-ai/nomic-embed-text-v1.5",
+ "judge_model": "accounts/fireworks/models/gpt-oss-120b"
+}

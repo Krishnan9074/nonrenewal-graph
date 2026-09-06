@@ -1,0 +1,11 @@
+{
+ "mention": "catastrophe modeling and ratemaking regulation",
+ "type": "Regulation",
+ "entity_id": "regulation:ca:catastrophe-modeling-2024",
+ "method": "llm_judge",
+ "confidence": 0.96,
+ "nearest": "regulation:ca:catastrophe-modeling-2024",
+ "score": 0.8348409203138778,
+ "embed_model": "nomic-ai/nomic-embed-text-v1.5",
+ "judge_model": "accounts/fireworks/models/gpt-oss-120b"
+}

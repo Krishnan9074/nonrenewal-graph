@@ -1,0 +1,37 @@
+{
+ "entities": [
+  {
+   "mention": "State Farm General Insurance Company",
+   "type": "Insurer"
+  },
+  {
+   "mention": "Ricardo Lara",
+   "type": "Official"
+  },
+  {
+   "mention": "State Farm General emergency interim rate filing 2025",
+   "type": "RateFiling"
+  }
+ ],
+ "edges": [
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "DECIDED",
+   "dst_mention": "State Farm General emergency interim rate filing 2025",
+   "valid_from": "2026-03-06",
+   "valid_to": null,
+   "props": {
+    "outcome": "approved_interim"
+   },
+   "span": "the Commissioner’s prior order granting State Farm’s request for an emergency interim rate increase has been confirmed",
+   "confidence": 1.0
+  }
+ ],
+ "extraction_id": "835ba193b408cec2aa3be61e64328e7f06a1ef4541f1e5134d9cb2b943adda35",
+ "doc_id": "1cbffe7439cf189ee4c5b7d8ca7acdf842b9f4834d51209e68c6c4b79deadf95",
+ "schema_v": "1.0",
+ "prompt_v": "0148e8c632ad",
+ "model_id": "accounts/fireworks/models/gpt-oss-120b",
+ "status": "ok",
+ "rejected": []
+}

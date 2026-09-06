@@ -1,0 +1,11 @@
+{
+ "mention": "State Farm",
+ "type": "Insurer",
+ "entity_id": null,
+ "method": "unresolved",
+ "confidence": 0.0,
+ "nearest": "insurer:naic:25143",
+ "score": 0.6675645975194556,
+ "embed_model": "nomic-ai/nomic-embed-text-v1.5",
+ "judge_model": "accounts/fireworks/models/gpt-oss-120b"
+}

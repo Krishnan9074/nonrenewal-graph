@@ -1,0 +1,11 @@
+{
+ "mention": "State Farm emergency interim rate filing 2025",
+ "type": "RateFiling",
+ "entity_id": "ratefiling:cdi:2025:state-farm-general-emergency-interim",
+ "method": "embedding",
+ "confidence": 0.9335731034840891,
+ "nearest": "ratefiling:cdi:2025:state-farm-general-emergency-interim",
+ "score": 0.9335731034840891,
+ "embed_model": "nomic-ai/nomic-embed-text-v1.5",
+ "judge_model": "accounts/fireworks/models/gpt-oss-120b"
+}

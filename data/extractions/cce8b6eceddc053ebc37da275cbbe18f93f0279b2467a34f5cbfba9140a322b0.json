@@ -1,0 +1,47 @@
+{
+ "entities": [
+  {
+   "mention": "Ricardo Lara",
+   "type": "Official"
+  },
+  {
+   "mention": "Net Cost of Reinsurance in Ratemaking Regulation",
+   "type": "Regulation"
+  },
+  {
+   "mention": "wildfire catastrophe modeling regulation",
+   "type": "Regulation"
+  }
+ ],
+ "edges": [
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "ISSUED",
+   "dst_mention": "Net Cost of Reinsurance in Ratemaking Regulation",
+   "valid_from": "2024-12-30",
+   "valid_to": null,
+   "props": {},
+   "span": "issuing a historic regulation aimed at restoring stability to California’s insurance market while addressing the growing risks of wildfires and climate change. The new Net Cost of Reinsurance in Ratemaking Regulation requires insurance companies — for the first time — to increase coverage in high-risk areas, ensuring more options for Californians while limiting the costs passed on to consumers.",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "ISSUED",
+   "dst_mention": "wildfire catastrophe modeling regulation",
+   "valid_from": "2024-12-13",
+   "valid_to": null,
+   "props": {},
+   "span": "Commissioner Lara announced on December 13 that he had finalized a wildfire catastrophe modeling regulation",
+   "confidence": 1.0
+  }
+ ],
+ "extraction_id": "cce8b6eceddc053ebc37da275cbbe18f93f0279b2467a34f5cbfba9140a322b0",
+ "doc_id": "13c5075384361b5e208859946798e4af8b124912265181a04f83790c63236c4f",
+ "schema_v": "1.0",
+ "prompt_v": "0148e8c632ad",
+ "model_id": "accounts/fireworks/models/gpt-oss-120b",
+ "status": "ok",
+ "rejected": [
+  "Ricardo Lara -ISSUED-> Net Cost of Reinsurance in Ratemaking Regulation: span is not a verbatim substring of the chunk"
+ ]
+}

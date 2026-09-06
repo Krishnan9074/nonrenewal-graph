@@ -1,0 +1,11 @@
+{
+ "mention": "Safer from Wildfire Regulation",
+ "type": "Regulation",
+ "entity_id": "regulation:ca:safer-from-wildfires-2022",
+ "method": "llm_judge",
+ "confidence": 0.97,
+ "nearest": "regulation:ca:safer-from-wildfires-2022",
+ "score": 0.8485128479418903,
+ "embed_model": "nomic-ai/nomic-embed-text-v1.5",
+ "judge_model": "accounts/fireworks/models/gpt-oss-120b"
+}

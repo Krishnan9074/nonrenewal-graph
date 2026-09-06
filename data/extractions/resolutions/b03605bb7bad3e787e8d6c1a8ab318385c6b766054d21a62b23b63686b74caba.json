@@ -1,0 +1,11 @@
+{
+ "mention": "Mercury Insurance",
+ "type": "Insurer",
+ "entity_id": "insurer:naic:27553",
+ "method": "llm_judge",
+ "confidence": 0.99,
+ "nearest": "insurer:naic:27553",
+ "score": 0.7619900947052063,
+ "embed_model": "nomic-ai/nomic-embed-text-v1.5",
+ "judge_model": "accounts/fireworks/models/gpt-oss-120b"
+}

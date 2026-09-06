@@ -1,0 +1,50 @@
+{
+ "entities": [
+  {
+   "mention": "State Farm",
+   "type": "Insurer"
+  },
+  {
+   "mention": "Ricardo Lara",
+   "type": "Official"
+  },
+  {
+   "mention": "State Farm emergency interim rate filing 2025",
+   "type": "RateFiling"
+  }
+ ],
+ "edges": [
+  {
+   "src_mention": "State Farm",
+   "rel": "FILED",
+   "dst_mention": "State Farm emergency interim rate filing 2025",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {
+    "requested_pct": 22
+   },
+   "span": "State Farm requested emergency rate increases of 22%",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "DECIDED",
+   "dst_mention": "State Farm emergency interim rate filing 2025",
+   "valid_from": "2025-05-13",
+   "valid_to": null,
+   "props": {
+    "outcome": "approved_interim",
+    "approved_pct": 17
+   },
+   "span": "the order approves a 17% interim rate increase for State Farm’s homeowners line",
+   "confidence": 1.0
+  }
+ ],
+ "extraction_id": "7fb76a4fec1b0c9c91e134275cc41a7a01aa0340ed4597cb41b7ad02cb0733fb",
+ "doc_id": "c8ba4bea149aba426b80ed20c6ae212bc2f1a434a6ef26938fe5260c9fd5658a",
+ "schema_v": "1.0",
+ "prompt_v": "0148e8c632ad",
+ "model_id": "accounts/fireworks/models/gpt-oss-120b",
+ "status": "ok",
+ "rejected": []
+}

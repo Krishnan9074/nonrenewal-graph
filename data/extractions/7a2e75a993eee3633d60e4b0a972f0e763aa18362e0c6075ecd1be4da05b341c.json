@@ -1,0 +1,59 @@
+{
+ "entities": [
+  {
+   "mention": "Ricardo Lara",
+   "type": "Official"
+  },
+  {
+   "mention": "Sustainable Insurance Strategy",
+   "type": "Regulation"
+  },
+  {
+   "mention": "Safer from Wildfires regulation",
+   "type": "Regulation"
+  },
+  {
+   "mention": "Safer from Wildfire Regulation",
+   "type": "Regulation"
+  }
+ ],
+ "edges": [
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "ISSUED",
+   "dst_mention": "Sustainable Insurance Strategy",
+   "valid_from": "2023-09-21",
+   "valid_to": null,
+   "props": {},
+   "span": "Commissioner Lara announces Sustainable Insurance Strategy to improve state’s market conditions for consumers",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "ISSUED",
+   "dst_mention": "Safer from Wildfires regulation",
+   "valid_from": "2023-09-21",
+   "valid_to": null,
+   "props": {},
+   "span": "new Safer from Wildfires regulation",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "ISSUED",
+   "dst_mention": "Safer from Wildfire Regulation",
+   "valid_from": "2023-09-21",
+   "valid_to": null,
+   "props": {},
+   "span": "Enacting the Safer from Wildfire Regulation: Commissioner Lara",
+   "confidence": 1.0
+  }
+ ],
+ "extraction_id": "7a2e75a993eee3633d60e4b0a972f0e763aa18362e0c6075ecd1be4da05b341c",
+ "doc_id": "dda534eb02699b2aca9ed3f9a6f30c5416fc6d51a2dac3fe5bca79644ab889fc",
+ "schema_v": "1.0",
+ "prompt_v": "0148e8c632ad",
+ "model_id": "accounts/fireworks/models/gpt-oss-120b",
+ "status": "ok",
+ "rejected": []
+}

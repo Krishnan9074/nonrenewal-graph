@@ -1,0 +1,77 @@
+{
+ "entities": [
+  {
+   "mention": "Mercury Insurance",
+   "type": "Insurer"
+  },
+  {
+   "mention": "CSAA",
+   "type": "Insurer"
+  },
+  {
+   "mention": "Ricardo Lara",
+   "type": "Official"
+  },
+  {
+   "mention": "Mercury Insurance rate filing 2025",
+   "type": "RateFiling"
+  },
+  {
+   "mention": "CSAA rate filing 2025",
+   "type": "RateFiling"
+  }
+ ],
+ "edges": [
+  {
+   "src_mention": "Mercury Insurance",
+   "rel": "FILED",
+   "dst_mention": "Mercury Insurance rate filing 2025",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "rate filing received under the Sustainable Insurance Strategy from Mercury Insurance",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "CSAA",
+   "rel": "FILED",
+   "dst_mention": "CSAA rate filing 2025",
+   "valid_from": null,
+   "valid_to": null,
+   "props": {},
+   "span": "rate filing received under the Sustainable Insurance Strategy from CSAA",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "DECIDED",
+   "dst_mention": "Mercury Insurance rate filing 2025",
+   "valid_from": "2025-12-20",
+   "valid_to": null,
+   "props": {
+    "outcome": "approved"
+   },
+   "span": "has approved its first rate filing",
+   "confidence": 1.0
+  },
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "DECIDED",
+   "dst_mention": "CSAA rate filing 2025",
+   "valid_from": "2025-12-20",
+   "valid_to": null,
+   "props": {
+    "outcome": "approved"
+   },
+   "span": "also approved a second rate filing",
+   "confidence": 1.0
+  }
+ ],
+ "extraction_id": "5c2a22ffc3160390e7fc8365ae6784dd4626126f5d37f181be5bee09f10daeba",
+ "doc_id": "bfc3c08df29587411dc6832b7844aef419c01a62b235c30da3c196a176153372",
+ "schema_v": "1.0",
+ "prompt_v": "0148e8c632ad",
+ "model_id": "accounts/fireworks/models/gpt-oss-120b",
+ "status": "ok",
+ "rejected": []
+}

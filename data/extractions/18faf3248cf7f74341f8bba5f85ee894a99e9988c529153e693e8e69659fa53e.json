@@ -1,0 +1,38 @@
+{
+ "entities": [
+  {
+   "mention": "Ricardo Lara",
+   "type": "Official"
+  },
+  {
+   "mention": "catastrophe modeling and ratemaking regulation",
+   "type": "Regulation"
+  },
+  {
+   "mention": "Sustainable Insurance Strategy",
+   "type": "Regulation"
+  }
+ ],
+ "edges": [
+  {
+   "src_mention": "Ricardo Lara",
+   "rel": "ISSUED",
+   "dst_mention": "catastrophe modeling and ratemaking regulation",
+   "valid_from": "2024-12-13",
+   "valid_to": null,
+   "props": {},
+   "span": "Ricardo Lara enforced his “first of its kind” catastrophe modeling and ratemaking regulation",
+   "confidence": 1.0
+  }
+ ],
+ "extraction_id": "18faf3248cf7f74341f8bba5f85ee894a99e9988c529153e693e8e69659fa53e",
+ "doc_id": "25ca7151e5ed80dd01bed0b4088c08a7ee560d58ef3e85f75fa1402eb7db4faf",
+ "schema_v": "1.0",
+ "prompt_v": "0148e8c632ad",
+ "model_id": "accounts/fireworks/models/gpt-oss-120b",
+ "status": "ok",
+ "rejected": [
+  "Ricardo Lara -ISSUED-> catastrophe modeling and ratemaking regulation: span is not a verbatim substring of the chunk",
+  "Ricardo Lara -ISSUED-> Sustainable Insurance Strategy: span is not a verbatim substring of the chunk"
+ ]
+}
