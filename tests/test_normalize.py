@@ -63,3 +63,35 @@ def test_hazard_overlap_shares():
     out = fhsz.overlap(zcta, haz).set_index("zip")
     assert out.loc["94563"].very_high == pytest.approx(0.5) and out.loc["94563"].high == 0
     assert out.loc["94509"].tolist() == [0, 0, 0]
+
+
+def test_fair_plan_layout_follows_footer():
+    six = FAIR_TEXT.replace(
+        "94549 91% 1,773 265% 927 76% 254 26% 144 114", "94549 5% 2,000 91% 1,773 265% 927 76% 254 26% 144 114"
+    )
+    six = six.replace("9/30/2025 9/30/2024", "9/30/2026 9/30/2025 9/30/2024")
+    six = six.replace("94720 0% 1 0% 1 0% - 0% - -", "94720 0% 1 0% 1 0% 1 0% - 0% - -").replace(
+        "Total 38%", "Total 1% 700,000 38%"
+    )
+    df = cdi_fair_plan.parse(six).set_index(["zip", "year"]).fair_policies
+    assert df[("94549", 2026)] == 2000 and df[("94549", 2021)] == 114 and ("94720", 2022) not in df.index
+
+
+def test_html_text_and_dates():
+    from policygraph.normalize.documents import published_at
+    from policygraph.normalize.html_text import to_text
+
+    html = (
+        '<nav>menu</nav><H1>Title</H1><div class="newsReleaseDate">For Release: May 13, 2025</div>'
+        '<p>Body <a>x</a>.</p><div class="content_right_column">side</div>'
+    )
+    text = to_text(html)
+    assert text == "Title\nFor Release: May 13, 2025\nBody x."
+    assert str(published_at(text)) == "2025-05-13"
+    assert (
+        str(published_at("DATE: February 3 , 2020 \nRE:")) == "None"
+        and str(published_at("DATE: February 3, 2020 \nRE:")) == "2020-02-03"
+    )
+    assert str(published_at("Headline\nDecember 20, 2025 - The Department")) == "2025-12-20"
+    with pytest.raises(ValueError):
+        to_text("<p>no markers</p>")
