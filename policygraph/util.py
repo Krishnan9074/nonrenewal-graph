@@ -18,5 +18,5 @@ def load_yaml(path: Path) -> dict:
     return yaml.safe_load(path.read_text())
 
 
-def dump_yaml(path: Path, obj: dict) -> None:
+def dump_yaml(path: Path, obj: object) -> None:
     path.write_text(yaml.safe_dump(obj, sort_keys=False))

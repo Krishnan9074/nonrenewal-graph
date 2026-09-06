@@ -1,0 +1,100 @@
+# Canonical entities a mention can resolve to. `aliases` are exact, case-insensitive matches (resolver step 2);
+# `name` + `description` are what the extraction service embeds and shows its judge for the residual (steps 3-4).
+# ZIPs, bill numbers, fires and moratoria are keyed by rule and never listed here. Grows by review.
+entities:
+  - id: insurer:naic:25143
+    type: Insurer
+    name: State Farm General Insurance Company
+    description: State Farm's California property-casualty subsidiary; the state's largest home insurer (NAIC 25143)
+    aliases: [State Farm General, State Farm, SFG]
+  - id: insurer:naic:27553
+    type: Insurer
+    name: Mercury Insurance Company
+    description: Los Angeles-based home and auto insurer, third-largest California homeowners writer (NAIC 27553)
+    aliases: [Mercury]
+  - id: insurer:naic:15539
+    type: Insurer
+    name: CSAA Insurance Exchange
+    description: AAA-affiliated Northern California home and auto insurer, fifth-largest homeowners writer (NAIC 15539)
+    aliases: [CSAA]
+  - id: insurer:naic:21652
+    type: Insurer
+    name: Farmers Insurance Exchange
+    description: Farmers Insurance Group's lead exchange, second-largest California home insurer (NAIC 21652)
+    aliases: [Farmers, Farmers Insurance, Farmers Insurance Group]
+  - id: insurer:naic:19232
+    type: Insurer
+    name: Allstate Insurance Company
+    description: National insurer that paused new California homeowners policies in 2022 (NAIC 19232)
+    aliases: [Allstate]
+  - id: insurer:naic:25941
+    type: Insurer
+    name: United Services Automobile Association
+    description: USAA, insurer for military families (NAIC 25941)
+    aliases: [USAA]
+  - id: insurer:fairplan
+    type: Insurer
+    name: California FAIR Plan Association
+    description: The state-mandated insurer of last resort for property owners who cannot find voluntary coverage
+    aliases: [California FAIR Plan, FAIR Plan, the FAIR Plan]
+  - id: official:cdi:commissioner
+    type: Official
+    name: Ricardo Lara
+    description: California Insurance Commissioner since 2019; as a state senator authored SB 824 (2018)
+    aliases: [Commissioner Lara, Lara, the Commissioner]
+  - id: official:ca:governor
+    type: Official
+    name: Gavin Newsom
+    description: Governor of California since 2019; declares the states of emergency that start SB 824 moratoria
+    aliases: [Governor Newsom, Newsom]
+  - id: official:cdi:deputy-communications
+    type: Official
+    name: Michael Soller
+    description: Deputy Commissioner for Communications and Press Relations, California Department of Insurance
+    aliases: []
+  - id: regulation:ca:sustainable-insurance-strategy
+    type: Regulation
+    name: Sustainable Insurance Strategy
+    description: Commissioner Lara's 2023-2025 package of regulations on catastrophe models, reinsurance costs and FAIR Plan reform
+    aliases: [the Sustainable Insurance Strategy, Sustainable Insurance Strategy regulations, SIS]
+  - id: regulation:ca:catastrophe-modeling-2024
+    type: Regulation
+    name: Wildfire catastrophe modeling and ratemaking regulation
+    description: Regulation filed December 13, 2024 letting insurers use forward-looking wildfire models if they write in distressed areas
+    aliases: []
+  - id: regulation:ca:net-cost-of-reinsurance-2024
+    type: Regulation
+    name: Net Cost of Reinsurance in Ratemaking Regulation
+    description: Regulation issued December 30, 2024 letting insurers pass California-only reinsurance costs into rates
+    aliases: []
+  - id: regulation:ca:safer-from-wildfires-2022
+    type: Regulation
+    name: Safer from Wildfires regulation
+    description: 2022 regulation requiring insurers to recognise home and community wildfire mitigation in rates
+    aliases: [Safer from Wildfires]
+  - id: regulation:ca:prop103
+    type: Regulation
+    name: Proposition 103
+    description: 1988 California ballot measure requiring prior approval of property-casualty rates by the Insurance Commissioner
+    aliases: [Prop 103, Prop. 103, Proposition 103 (1988)]
+  - id: regulation:ca:executive-order-n-13-23
+    type: Regulation
+    name: Executive Order N-13-23
+    description: Governor Newsom's September 21, 2023 executive order supporting the Sustainable Insurance Strategy
+    aliases: []
+  - id: ratefiling:cdi:2025:state-farm-general-emergency-interim
+    type: RateFiling
+    name: State Farm General emergency interim rate filing 2025
+    description: Emergency interim request of February 3, 2025 (22% homeowners); 17% approved on an interim basis May 13, 2025
+    aliases:
+      - State Farm General emergency interim rate filing 2025
+  - id: ratefiling:cdi:2025:mercury
+    type: RateFiling
+    name: Mercury Insurance rate filing 2025
+    description: First rate filing approved under the Sustainable Insurance Strategy, December 20, 2025 (6.9%)
+    aliases: []
+  - id: ratefiling:cdi:2025:csaa
+    type: RateFiling
+    name: CSAA rate filing 2025
+    description: Second rate filing approved under the Sustainable Insurance Strategy, December 2025 (6.9%)
+    aliases: []
