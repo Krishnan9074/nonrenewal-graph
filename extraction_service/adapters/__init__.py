@@ -1,15 +1,15 @@
 import os
 from typing import Protocol
 
-from extraction_service.models import Extraction
-
 PROVIDER = os.environ.get("EXTRACTION_PROVIDER", "openai_compat")
 
 
 class Adapter(Protocol):
     model_id: str
 
-    def extract(self, prompt: str, schema: dict) -> Extraction: ...
+    def structured(self, prompt: str, schema: dict) -> dict:
+        """One model call constrained to a JSON schema; the caller validates the result."""
+        ...
 
 
 def build(model_id: str) -> Adapter:
