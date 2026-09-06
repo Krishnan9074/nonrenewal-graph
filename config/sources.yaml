@@ -29,5 +29,21 @@ sources:
     urls:
       - https://www.insurance.ca.gov/0250-insurers/0300-insurers/0200-bulletins/bulletin-notices-commiss-opinion/upload/Bulletin-2020-12-Mandatory-Moratorium-on-Cancellations-and-Non-Renewals-of-Policies-of-Residential-Property-Insurance-After-the-Declaration-of-a-State-of-Emergency.pdf
       - https://www.insurance.ca.gov/0250-insurers/0300-insurers/0200-bulletins/bulletin-notices-commiss-opinion/upload/Bulletin-2025-1-One-Year-Moratorium-Updated-ZIP-Codes-Amended-17-January-2025.pdf
+      # 2nd amended 2019 bulletin (Feb 3, 2020): Saddleridge, Kincade, Tick, Getty, Sky (Contra Costa) and the other Oct 2019 fires
+      - https://www.insurance.ca.gov/0250-insurers/0300-insurers/0200-bulletins/bulletin-notices-commiss-opinion/upload/MandatoryMoratoriumOnNonRenewalsAfterRecentWildfireActivity-2.pdf
+      # Bulletin 2020-11 amended Nov 6, 2020: the Aug-Sep 2020 lightning complexes, incl. SCU (east Contra Costa)
+      - https://www.insurance.ca.gov/0250-insurers/0300-insurers/0200-bulletins/bulletin-notices-commiss-opinion/upload/Bulletin-2020-11-Mandatory-Moratorium-on-Cancellations-and-Non-Renewals-of-Policies-of-Residential-Property-Insurance-After-the-Declaration-of-a-State-of-Emergency-Amended-11_6_20.pdf
     normalizer: documents
     doc_source: cdi_bulletin
+  cdi_press:
+    type: html           # CDI press releases and alerts: Sustainable Insurance Strategy regulations and rate decisions
+    urls:
+      - https://www.insurance.ca.gov/0400-news/0100-press-releases/2023/release051-2023.cfm
+      - https://www.insurance.ca.gov/0400-news/0100-press-releases/2024/release062-2024.cfm
+      - https://www.insurance.ca.gov/0400-news/0100-press-releases/2024/release065-2024.cfm
+      - https://www.insurance.ca.gov/0400-news/0100-press-releases/2025/release018-2025.cfm
+      - https://www.insurance.ca.gov/0400-news/0100-press-releases/2025/release038-2025.cfm
+      - https://www.insurance.ca.gov/0400-news/0102-alerts/2025/Mercury-Insurance-and-CSAA-Expand-Homeow.cfm
+      - https://www.insurance.ca.gov/0400-news/0100-press-releases/2026/release012-2026.cfm
+    normalizer: documents
+    doc_source: cdi_press
