@@ -8,9 +8,9 @@ class Fake:
     def __init__(self, out: dict):
         self.out, self.calls = out, 0
 
-    def extract(self, prompt: str, schema: dict) -> Extraction:
+    def structured(self, prompt: str, schema: dict) -> dict:
         self.calls += 1
-        return Extraction.model_validate(self.out)
+        return self.out
 
 
 DOC = "DATE: January 9, 2025. No insurer shall issue a notice of non-renewal in ZIP Codes 91001, 91006."
@@ -34,6 +34,17 @@ def test_process_ok(tmp_path, monkeypatch):
     monkeypatch.setattr("extraction_service.store.STORE", tmp_path)
     art = process("doc1", DOC, Fake(GOOD))
     assert art.status == "ok" and art.extraction_id == extraction_id("doc1", "fake")
+
+
+def test_process_cache_hit_and_force(tmp_path, monkeypatch):
+    monkeypatch.setattr("extraction_service.store.STORE", tmp_path)
+    adapter = Fake(GOOD)
+    art = process("doc1", DOC, adapter)
+    (tmp_path / f"{art.extraction_id}.json").write_text(art.model_dump_json())
+    process("doc1", DOC, adapter)
+    assert adapter.calls == 1
+    process("doc1", DOC, adapter, force=True)
+    assert adapter.calls == 2
 
 
 def test_bad_span_retries_then_fails(tmp_path, monkeypatch):

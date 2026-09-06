@@ -44,7 +44,7 @@ class Artifact(Extraction):
     schema_v: str
     prompt_v: str
     model_id: str
-    status: Literal["ok", "no_target_relations", "failed_validation"]
+    status: Literal["ok", "no_target_relations", "failed_validation", "error"]
     rejected: list[str] = Field(default_factory=list)
 
 
@@ -53,9 +53,54 @@ class Job(BaseModel):
     doc_id: str
     source: str
     text: str
+    force: bool = False  # bypass the extraction cache and overwrite the artifact
+
+
+class ZipBlock(BaseModel):
+    heading: str
+    name: str
+    date: date | None  # the declaration this block sits under; None outside a dated section
+    zips: list[str]
+    span: str
 
 
 class Anchors(BaseModel):
     zips: set[str]
     dates: set[date]
     bills: set[str]
+    zip_blocks: list[ZipBlock] = Field(default_factory=list)
+
+    def for_prompt(self) -> str:
+        """Headings and dates only: the model relates fires to declarations, it does not enumerate ZIPs."""
+        blocks = [{"heading": b.heading, "declaration": str(b.date), "zips": len(b.zips)} for b in self.zip_blocks]
+        return self.model_dump_json(exclude={"zip_blocks"})[:-1] + f', "fire_blocks": {blocks}}}'.replace("'", '"')
+
+
+class Candidate(BaseModel):
+    entity_id: str
+    type: EntityType
+    name: str
+    description: str = ""
+
+
+class Mention(BaseModel):
+    mention: str
+    type: EntityType
+    context: str = ""  # a span from the document that contains the mention
+
+
+class Resolution(BaseModel):
+    mention: str
+    type: EntityType
+    entity_id: str | None
+    method: Literal["embedding", "llm_judge", "unresolved"]
+    confidence: float
+    nearest: str | None = None  # best candidate and its cosine, kept even when rejected, for review
+    score: float = 0.0
+    embed_model: str
+    judge_model: str
+
+
+class ResolveRequest(BaseModel):
+    mentions: list[Mention]
+    candidates: list[Candidate]
