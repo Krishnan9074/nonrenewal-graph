@@ -90,9 +90,13 @@ policygraph/
 ├── Makefile                     # make all | fetch | normalize | extract | resolve | graph | insights | app
 ├── pyproject.toml + uv.lock     # pinned deps
 ├── config/
-│   ├── sources.yaml             # every external source: url, type, parser, expected sha256
-│   ├── schema.sql               # DuckDB DDL (section 5)
-│   └── extraction_schema.json   # JSON schema the LLM must emit (section 6)
+│   ├── sources.yaml             # every external source: url, type, parser
+│   ├── source_hashes.yaml       # url → sha256 of the last fetched bytes (committed; `make fetch` flags drift)
+│   ├── entities.yaml            # canonical entities: id, type, name, description, aliases (resolver steps 2–4)
+│   ├── resolutions.yaml         # every answer the service's kNN/judge gave, pinned so `make resolve` replays offline
+│   ├── extraction_manifest.yaml # the pinned extraction run (section 6)
+│   ├── places.yaml              # ZIP → place name, labels only
+│   └── schema.sql               # DuckDB DDL (section 5)
 ├── data/
 │   ├── raw/<source>/<sha256>.<ext>      # immutable, git-lfs or manifest-only
 │   ├── normalized/*.parquet
@@ -101,20 +105,22 @@ policygraph/
 │   └── insights/*.parquet
 ├── policygraph/
 │   ├── fetch.py        # downloads, verifies hash, writes manifest
-│   ├── normalize/      # one module per source type: cdi_nonrenewal.py, fhsz.py, acs.py, pdf_text.py
-│   ├── extract.py      # LLM extraction, cached
-│   ├── resolve.py      # entity resolution pipeline
+│   ├── normalize/      # one module per source type: cdi_nonrenewal.py, fhsz.py, acs.py, documents.py (+ html_text.py)
+│   ├── extract.py      # submits documents to the extraction service, pins the run manifest
+│   ├── resolve.py      # entity resolution pipeline (canonical → alias → pinned → service → pending)
 │   ├── graph.py        # loads entities/edges into DuckDB, validates constraints
-│   ├── insights/       # one module per finding
-│   └── app.py          # Streamlit
-├── tests/              # schema tests, golden extractions, resolution regression set
+│   ├── insights/       # one module per finding, plus the tables the app serves (events, trend, explorer, geometry)
+│   ├── app.py          # Streamlit entry; derives every path from __file__ so Streamlit Cloud can run it
+│   └── views/          # map (pydeck choropleth), timeline (altair), explorer (vis-network), tables
+├── tests/              # schema tests, golden extractions, resolution regression set (tests/resolution_set.yaml)
+├── Dockerfile · .github/workflows/ci.yml
 └── docs/
     ├── ARCHITECTURE.md (this file)
     ├── FINDINGS.md
     └── DATA_SOURCES.md
 ```
 
-Reproduce from scratch: `git clone && uv sync && make all`. With committed `data/extractions/`, no API key is needed to rebuild the graph; `make extract FORCE=1` re-runs the LLM.
+Reproduce from scratch: `git clone && uv sync && make all`. With committed `data/extractions/`, no API key is needed to rebuild the graph; `make extract FORCE=1` re-runs the LLM (the job carries `force`, the worker bypasses its cache and overwrites the artifact). `make fetch` is a no-op on unchanged sources: it sends the recorded ETag / Last-Modified as a conditional GET (ArcGIS layers compare `dataLastEditDate`), and `make fetch FORCE=1` re-downloads everything.
 
 ## 5. Data model (DuckDB)
 
@@ -215,8 +221,10 @@ Ordered, cheapest-first. Each step records its method on the alias row so qualit
 
 1. **Canonical key** — if the mention contains/maps to a ZIP, NAIC code, bill number, or FIPS: resolved, confidence 1.0.
 2. **Alias table** — exact match on a curated alias list (`"SFG"`, `"State Farm General"` → `insurer:naic:25143`). Seeded from CDI's admitted-insurer list; grows as LLM-judged matches are accepted.
-3. **Embedding kNN** — `text-embedding` of mention vs canonical names within the same `type`; accept if cosine ≥ 0.92 *and* the runner-up is ≥ 0.05 lower.
-4. **LLM judge** — for the ambiguous band, ask the model "same entity?" with both contexts. Accept ≥ 0.85, else create a `pending:` entity for manual review.
+3. **Embedding kNN** — `nomic-embed-text-v1.5` of the mention vs `name — description` of every candidate in `config/entities.yaml` with the same `type`; accept if cosine ≥ 0.92 *and* the runner-up is ≥ 0.05 lower.
+4. **LLM judge** — for the ambiguous band (cosine ≥ 0.75, or a small margin), ask the extraction model "same entity?" with the mention's span as context. Accept ≥ 0.85, else create a `pending:` entity for manual review.
+
+Steps 3–4 run inside the extraction service (`POST /v1/resolve`), because only that service talks to models. Every answer — accepted or not, with the nearest candidate and its cosine — is pinned in `config/resolutions.yaml`, so `make resolve` replays without the service and a changed answer shows up as a diff. `make resolve FORCE=1` re-asks.
 
 Type constraints prevent the classic failures: an Insurer mention can never resolve to an Official; a Fire is keyed by (name, year) so "Eaton Fire" never merges across decades.
 
@@ -227,10 +235,12 @@ Each finding is a module with a single function returning a DataFrame, materiali
 | Finding | Computation | What it shows that sources don't |
 |---|---|---|
 | **Hazard residual** | OLS of non-renewal rate on `HAZARD_SHARE` across all CA ZIPs; report Contra Costa residuals | Orinda/Lafayette/Moraga are far above the hazard-predicted line → driver is insurer portfolio strategy, not fire risk |
-| **Moratorium deferral** | Diff-in-diff: non-renewals in protected ZIPs in year N, N+1 vs matched unprotected ZIPs | Whether SB 824 moratoriums prevent or merely delay non-renewals |
-| **Regulatory alignment** | Event-study: non-renewal deltas in ±2 quarters around `DECIDED` / `Regulation` edges vs around fire dates | Timing tracks CDI decisions more than fire seasons |
+| **Moratorium deferral** | Before / during / after counts for protected ZIPs vs all other ZIPs and vs a control matched on hazard share and policy count (`matching.nearest`) | Whether SB 824 moratoriums prevent or merely delay non-renewals |
+| **Regulatory alignment** | Event study at annual (CDI) and fiscal-year (FAIR Plan) resolution around `ISSUED` / `DECIDED` edges vs fire declarations | Which calendar the county's series move with |
 | **FAIR Plan mirror** | Correlation of insurer NONRENEWED_IN counts with HAS_FAIR_PLAN_POLICIES growth by ZIP | Where the state-backed insurer of last resort is absorbing the exits |
-| **Actor centrality** | Betweenness on the entity graph restricted to Contra Costa ZIP neighborhoods | Which insurers/officials sit on the most paths from policy to outcome |
+| **Actor centrality** | Betweenness on the entity graph restricted to non-ZIP entities plus Contra Costa ZIPs | Which insurers/officials sit on the most paths from policy to outcome |
+
+The app also reads `events`, `trend`, `explorer` and `cc_zips.geojson`, materialized by the same stage.
 
 Every number in `FINDINGS.md` links to the query that produced it.
 
@@ -249,16 +259,17 @@ Every number in `FINDINGS.md` links to the query that produced it.
 
 ## 10. Reproducibility guarantees
 
-- `config/sources.yaml` pins each source URL and its expected sha256; `fetch` fails loudly on mismatch and records the new hash for review.
+- `config/sources.yaml` declares each source; `config/source_hashes.yaml` pins the sha256 of the last fetch and `make fetch` prints `changed` when upstream bytes differ.
 - `uv.lock` pins Python deps; `Dockerfile` pins the runtime.
 - Extraction artifacts are committed under `data/extractions/` and pinned by `config/extraction_manifest.yaml`, so the graph rebuilds byte-identically without API access.
-- `make all` is deterministic given the raw manifest; `tests/` includes golden-file tests for three bulletins and a 50-mention resolution regression set.
+- `make all` is deterministic given the raw manifest; `extraction_service/eval/golden/` holds four hand-labelled bulletins (`make eval`) and `tests/resolution_set.yaml` is a 50-mention resolution regression set run by `make test`.
 - `ARCHITECTURE.md`, `FINDINGS.md`, and the deployed app are generated from the same DuckDB file — no hand-copied numbers.
 
 ## 11. Deployment
 
 - Streamlit Community Cloud from `main`; app reads `data/graph.duckdb` + `data/insights/*.parquet` committed to the repo (both < 50 MB for one county).
-- No secrets required at runtime. `ANTHROPIC_API_KEY` only needed for `make extract FORCE=1`.
+- No secrets required at runtime. A model key is only needed by the extraction service (`make extract`, `make resolve` for new mentions).
+- `policygraph/app.py` puts the repo root on `sys.path` from `__file__`; Streamlit Cloud runs the script with only its own directory on the path. `requirements.txt` lists only what the app imports.
 - Views: **Map** (pydeck choropleth: non-renewal rate, hazard share, residual, FAIR Plan growth, moratorium coverage by year), **Graph** (pyvis neighborhood explorer with span-on-hover), **Timeline** (non-renewals vs regulatory/fire events), **Findings** (rendered from `FINDINGS.md`).
 
 ## 12. What I would build next
@@ -269,7 +280,7 @@ Every number in `FINDINGS.md` links to the query that produced it.
 4. **Causal layer** — replace the event-study heuristics with synthetic-control estimates per ZIP so "appears to drive" becomes a defensible effect size.
 5. **Precision/recall dashboard** per extractor and resolver method, computed against a growing labeled set, so quality is measured per release instead of assumed.
 
-## 13. Prototype deviations (2026-09-04)
+## 13. Prototype deviations (2026-09-05)
 
 What the shipped prototype does differently from the design above, and why.
 
@@ -278,5 +289,10 @@ What the shipped prototype does differently from the design above, and why.
 - **FHSZ comes from CAL FIRE's ArcGIS feature services** as paged GeoJSON (`arcgis_geojson` source type), not a shapefile. ZCTA boundaries are the generalized cartographic file.
 - **FAIR Plan counts come from the FAIR Plan's own PDF** (fiscal-year policies in force by ZIP), not a CDI workbook.
 - **Extraction runs on an open-weight model** (Fireworks `gpt-oss-120b`) through the `openai_compat` adapter; the Anthropic adapter remains available. Artifacts record `rejected` validator errors for audit.
-- **Resolver has canonical rules for fires and moratoria** keyed on the mention conventions in the prompt (`Eaton Fire 2025`, `Eaton Fire moratorium 2025-01-07`), so no embedding or LLM-judge step was needed for the bulletins.
-- **Insights add an `evidence` table** (every LLM edge with span and source URL) so the app shows receipts without shipping the DuckDB file.
+- **Resolver has canonical rules for fires and moratoria** keyed on the mention conventions in the prompt (`Eaton Fire 2025`, `Eaton Fire moratorium 2025-01-07`). Rate filings and named regulations have no public identifier, so they resolve through the alias table, then the service's kNN + judge.
+- **`doc_id` is the sha256 of the extracted text**, not the bytes: CDI's HTML pages embed per-request tokens.
+- **Event study runs at annual resolution.** CDI publishes calendar-year ZIP counts, so "±2 quarters" becomes year −1 / 0 / +1, and events after 2023 have no non-renewal window at all.
+- **Moratorium "year" is the calendar year holding the midpoint of the 12-month window**, so the October 2019 declaration is a 2020 event; each CDI release is analysed separately with the measure it publishes, against both all other CA ZIPs and a control matched on Very High hazard share and policy count.
+- **Actor centrality is computed on the county neighbourhood**: every non-ZIP entity plus Contra Costa ZIPs. The anonymised `market:ca:voluntary` hub is an actor in that graph because CDI publishes no carrier identity.
+- **Insights add `evidence`, `events`, `trend`, `explorer` tables and `cc_zips.geojson`** so the app shows receipts, the timeline, the graph explorer and the choropleth without shipping the DuckDB file or geopandas.
+- **Cal-Access contributions are not ingested** (`docs/DATA_SOURCES.md`).

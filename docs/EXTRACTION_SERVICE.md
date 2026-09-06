@@ -20,11 +20,13 @@ Calling an LLM inline from the graph pipeline fails on three axes:
 ## 2. Service boundary and contract
 
 ```
-                        ┌──────────────────────────────────────────┐
-  graph pipeline ─────► │  POST /v1/jobs  {doc_id, source, schema_v}│
-  (producer)            │  GET  /v1/extractions/{doc_id}?schema_v=  │
-                        │  GET  /v1/manifests/{run_id}              │
-                        └──────────────────────────────────────────┘
+                        ┌──────────────────────────────────────────────────┐
+  graph pipeline ─────► │  POST /v1/runs  {schema_v}                        │
+  (producer)            │  POST /v1/jobs  {run_id, doc_id, source, text, force}
+                        │  GET  /v1/extractions/{extraction_id}             │
+                        │  GET  /v1/manifests/{run_id}                      │
+                        │  POST /v1/resolve {mentions, candidates}  (sync)  │
+                        └──────────────────────────────────────────────────┘
                                           │
                                           ▼
    documents store ───► queue ───► workers ───► extraction store ───► outbox/topic ───► graph pipeline (consumer)
@@ -132,6 +134,15 @@ Prompt and model changes are deployments, not edits.
 | Prompt regression | CI golden eval | Merge blocked |
 | Source changes format (PDF → HTML) | Classify + validator reject spike | Alert; parser update; replay from DLQ |
 
+## 8a. Entity resolution endpoint
+
+`POST /v1/resolve` runs steps 3–4 of the resolver (`ARCHITECTURE.md` §7) for mentions the pipeline could not key or
+alias: embed mention and `name — description` of every same-type candidate (`EMBED_MODEL`, via the OpenAI-compatible
+`/embeddings` route), accept a clear cosine winner (≥ 0.92 with a ≥ 0.05 margin), otherwise ask the extraction model
+"same entity?" for candidates in the band (≥ 0.75) and accept ≥ 0.85. Each answer is cached under
+`resolutions/<sha256(mention, type, context, candidates, models, version)>.json` and records the nearest candidate and
+its cosine even when rejected. The pipeline pins every answer in `config/resolutions.yaml`.
+
 ## 9. Prototype implementation (today)
 
 Same architecture, smallest deployable shape:
@@ -139,17 +150,20 @@ Same architecture, smallest deployable shape:
 ```
 extraction_service/
 ├── api.py            # FastAPI: POST /jobs, GET /extractions, GET /manifests
-├── queue.py          # SQLite-backed queue (swap: Redis/SQS)
+├── store.py          # SQLite-backed queue + artifact store (swap: Redis/SQS + S3)
+├── resolve.py        # kNN + judge (8a); embed.py wraps the embeddings route
 ├── worker.py         # steps 1–9; run as `python -m extraction_service.worker`
 ├── adapters/         # anthropic.py, openai_compat.py (vLLM self-hosted)
 ├── schema/v1.json
-├── prompts/v7.md     # content-hashed at load
+├── prompts/v2.md     # content-hashed at load
 ├── validators.py
-├── eval/golden/      # 20 labeled docs today, grows
-└── store/            # local FS; swap: S3
+├── eval/golden/      # 4 hand-labelled bulletins today, grows
 ```
 
-- Deploy: one container on Fly.io / Cloud Run, worker as a sidecar process.
+- Deploy: one container on Fly.io / Cloud Run, worker as a sidecar process. The worker requeues jobs left `running`
+  by a dead worker at startup and records an unhandled exception as job status `error` (surfaced in the manifest and
+  turned into a failing `make extract`) rather than stopping the queue.
+- Output budget: `EXTRACTION_MAX_TOKENS` (default 100k); a 700-ZIP moratorium bulletin with verbatim spans is ~80k tokens.
 - Graph repo pins `manifests/2026-09-04-cdi.yaml` and commits the referenced artifacts, so `make all` runs with no network and no key.
 - `make eval` runs the golden set and prints the precision/recall table that goes in the write-up.
 
