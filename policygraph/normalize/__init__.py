@@ -10,6 +10,7 @@ def run() -> None:
     NORMALIZED.mkdir(parents=True, exist_ok=True)
     cfg = load_yaml(CONFIG / "sources.yaml")["sources"]
     manifest = load_yaml(MANIFEST)
+    (NORMALIZED / "documents.parquet").unlink(missing_ok=True)  # document normalizers append, one source at a time
     for norm in NORMALIZERS.values():  # order matters: zcta before fhsz
         for name, spec in cfg.items():
             if spec["normalizer"] == norm.__name__.rsplit(".", 1)[-1] and name in manifest:
