@@ -1,6 +1,6 @@
 ## Part 3. The pipeline, file by file
 
-### 3.1 `policygraph/fetch.py` — downloading sources
+### 3.1 `policygraph/fetch.py`: downloading sources
 
 ```python
  1  import json
@@ -158,7 +158,7 @@ The decision tree for one URL:
 - **93–104** For each source and each of its URLs: fetch, record, and print one status line. If the hash differs from the committed one, the line says `changed` even when the local file was already current, so a reviewer notices upstream drift.
 - **105–107** Write the local manifest and the committed hash list.
 
-### 3.2 `policygraph/normalize/__init__.py` — running the normalizers
+### 3.2 `policygraph/normalize/__init__.py`: running the normalizers
 
 ```python
  1  from policygraph import CONFIG, NORMALIZED
@@ -183,7 +183,7 @@ The decision tree for one URL:
 - **13** The documents table is built by appending one source at a time (bulletins, then press releases), so it is deleted first to avoid stale rows from earlier runs.
 - **14–17** For each normalizer, find every source whose `normalizer:` field names it and which was actually fetched, and call its `run(spec, files)`. Every normalizer has the same signature: the source's spec from `sources.yaml` and its list of fetched-file records.
 
-### 3.3 `policygraph/normalize/zcta.py` — ZIP boundaries
+### 3.3 `policygraph/normalize/zcta.py`: ZIP boundaries
 
 ```python
  5  CA_ZIPS = ("90000", "96200")  # the cartographic file is national
@@ -195,7 +195,7 @@ The decision tree for one URL:
 - **9** GeoPandas reads a shapefile straight out of the zip archive. The Census column `ZCTA5CE20` is renamed `zip`.
 - **10** Keep only California ZIPs (90000–96199), only the two columns needed, reproject to California Albers (metres, area-true), and write parquet.
 
-### 3.4 `policygraph/normalize/fhsz.py` — hazard share per ZIP
+### 3.4 `policygraph/normalize/fhsz.py`: hazard share per ZIP
 
 ```python
  6  HAZ = {"Moderate": "moderate", "High": "high", "Very High": "very_high"}  # LRA also carries NonWildland, dropped
@@ -226,7 +226,7 @@ The decision tree for one URL:
 
 Reads the two fetched layers (state and local responsibility areas), stamps them with the CRS the fetch requested (GeoJSON from ArcGIS does not say), concatenates, overlays, writes.
 
-### 3.5 `policygraph/normalize/acs.py` — Census medians
+### 3.5 `policygraph/normalize/acs.py`: Census medians
 
 ```python
  5  VARS = {
@@ -246,7 +246,7 @@ Reads the two fetched layers (state and local responsibility areas), stamps them
 - **13** The Census API returns a JSON array whose first row is the header. Rebuild a frame using row 0 as column names and rename.
 - **14–15** Convert to numbers; the Census marks suppressed values with a large negative sentinel, which `mask(vals < 0)` turns into null.
 
-### 3.6 `policygraph/normalize/cdi_nonrenewal.py` — the core counts
+### 3.6 `policygraph/normalize/cdi_nonrenewal.py`: the core counts
 
 ```python
  7  COMMON = {"County": "county", "ZIP Code": "zip", "Year": "year", "New": "new", "Renewed": "renewed"}
@@ -291,7 +291,7 @@ CDI published two workbooks with different columns. The 2015–2021 release spli
 
 Read each workbook as text (so ZIPs keep their zeros), parse, stack, write. The two releases stay distinguishable by `release`.
 
-### 3.7 `policygraph/normalize/cdi_fair_plan.py` — the FAIR Plan PDF
+### 3.7 `policygraph/normalize/cdi_fair_plan.py`: the FAIR Plan PDF
 
 ```python
  8  ROW_RE = re.compile(r"^\d{5}\b")
@@ -337,7 +337,7 @@ The PDF is a table whose text extraction gives lines like `94549 91% 1,773 265% 
 
 pypdf extracts the text of every page (the `cryptography` dependency lets it open the encrypted file); the result goes through `parse`.
 
-### 3.8 `policygraph/normalize/html_text.py` — press-release HTML to text
+### 3.8 `policygraph/normalize/html_text.py`: press-release HTML to text
 
 ```python
  1  from html.parser import HTMLParser
@@ -385,7 +385,7 @@ A tiny HTML-to-text converter built on Python's standard parser, so no new depen
 - **32–34** CDI's page template puts the headline in `<H1>` and the sidebar in a `content_right_column` div. Take the text between them; if the template ever changes, stop loudly.
 - **36–38** Feed that slice to the parser, join the pieces, collapse runs of whitespace within each line, and drop empty lines.
 
-### 3.9 `policygraph/normalize/documents.py` — the documents table
+### 3.9 `policygraph/normalize/documents.py`: the documents table
 
 ```python
 12  DATE_RE = re.compile(r"(?:(?:DATE|For Release):\s*|^)([A-Z][a-z]+ \d{1,2}, \d{4})(?:\s*[-–—]|\s*$)", re.M)
@@ -432,7 +432,7 @@ A tiny HTML-to-text converter built on Python's standard parser, so no new depen
 - **39** `doc_source` (`cdi_bulletin` or `cdi_press`) comes from `sources.yaml`.
 - **47–50** Append to the existing table (the bulletins normalizer runs, then the press one), removing duplicate ids.
 
-### 3.10 `policygraph/extract.py` — submitting documents to the service
+### 3.10 `policygraph/extract.py`: submitting documents to the service
 
 ```python
 10  SERVICE = os.environ.get("EXTRACTION_SERVICE_URL", "http://localhost:8000")
@@ -459,7 +459,7 @@ The pipeline never calls a model. It talks to the service over HTTP.
 - **23** Save the manifest. This file, committed to git, is what pins exactly which extraction artifacts the graph loads.
 - **24–25** If any document failed validation or errored, the stage fails.
 
-### 3.11 `policygraph/resolve.py` — mentions to entity ids
+### 3.11 `policygraph/resolve.py`: mentions to entity ids
 
 The model emits *mentions* ("Eaton Fire 2025", "State Farm", "94563"). Resolution turns each into a canonical entity id, cheapest method first.
 
@@ -595,7 +595,7 @@ From one extraction artifact, list its entities with, as context, the first quot
 - **114–117** Write the pins back, keeping only mentions that still exist, sorted for a stable diff.
 - **118–119** Save the resolution table and print a count per method.
 
-### 3.12 `policygraph/names.py` — readable names for rule-minted ids
+### 3.12 `policygraph/names.py`: readable names for rule-minted ids
 
 ```python
  3  FIRE_RE = re.compile(r"^fire:([a-z0-9-]+):(\d{4})$")
@@ -628,7 +628,7 @@ From one extraction artifact, list its entities with, as context, the first quot
 
 Entities made by rule (ZIPs, fires, moratoria, bills) have no hand-written name, so this derives one: `zip:94549` → `Lafayette 94549` (from `config/places.yaml`), `fire:scu-lightning-complex:2020` → `SCU Lightning Complex Fire 2020` (fire-complex acronyms stay upper-case), `bill:ca:SB824` → `SB 824`. The app's timeline and explorer show these.
 
-### 3.13 `policygraph/graph.py` — building the DuckDB graph
+### 3.13 `policygraph/graph.py`: building the DuckDB graph
 
 ```python
 11  COLS = ["src", "rel", "dst", "valid_from", "valid_to", "props", "doc_id", "span", "extractor", "confidence"]

@@ -246,7 +246,7 @@ Each check returns `None` on success or a message on failure; the message is fed
 
 Run all four checks on every edge; keep the clean ones, collect a readable error for each rejected one.
 
-### 5.5 `expand.py` — deterministic expansion of ZIP blocks
+### 5.5 `expand.py`: deterministic expansion of ZIP blocks
 
 ```python
  8  FIRE_RE = re.compile(r"^(.+?) Fires?(?: \(.*?\))?(?: (\d{4}))?(?: \d{4})?$", re.I)
@@ -310,7 +310,7 @@ Builds a rename map from every fire or moratorium mention the model produced to 
 78      return Extraction(entities=list(ents.values()), edges=list(edges.values()))
 ```
 
-- **45–54** Apply the rename map to entities and edges, and de-duplicate edges by (source, relation, target) — the model's own edge wins because it is inserted first (`setdefault` keeps the first value).
+- **45–54** Apply the rename map to entities and edges, and de-duplicate edges by (source, relation, target), the model's own edge wins because it is inserted first (`setdefault` keeps the first value).
 - **55–56** Index the moratorium mentions, and find the official who issued them (the Commissioner).
 - **57–77** For every dated block: find the model's moratorium mention for this fire (same name, same declaration date) or synthesise one from the heading; then add, only where missing, the TRIGGERED edge, the ISSUED edge and one PROTECTED_BY edge per ZIP. Expanded edges carry the block's verbatim span, a confidence of 0.97, the moratorium's one-year window, and `props.expanded_from = "zip_block"` so downstream code can tell them apart.
 
@@ -365,7 +365,7 @@ An adapter is anything with a `model_id` and a `structured(prompt, schema)` meth
 
 The Anthropic adapter does the same through Anthropic's SDK, using a forced tool call whose input schema is the JSON schema.
 
-### 5.7 `embed.py` and `resolve.py` — the resolver's model steps
+### 5.7 `embed.py` and `resolve.py`: the resolver's model steps
 
 ```python
 15      def embed(self, texts: list[str]) -> list[list[float]]:
@@ -422,7 +422,7 @@ The decision rule for one mention, given candidates ranked by cosine similarity:
 
 Every answer is cached by a hash of the mention, its context, the same-type candidates, the two model ids and a resolver version, so identical questions never cost a second call. Mentions and candidates are embedded in one batch; each mention is compared only with candidates of its own type (an insurer can never resolve to an official).
 
-### 5.8 `store.py` — queue and artifact store
+### 5.8 `store.py`: queue and artifact store
 
 ```python
  6  DDL = """
@@ -538,7 +538,7 @@ The prompt states the rules the validators enforce (verbatim spans, anchored ZIP
 
 The schema is the JSON shape the API forces the model to produce: an `entities` array and an `edges` array with exactly the fields the Pydantic models expect, enumerated types and relations, and `additionalProperties: false` so nothing extra sneaks in.
 
-### 5.12 `eval/__init__.py` — scoring against the golden set
+### 5.12 `eval/__init__.py`: scoring against the golden set
 
 ```python
 12  def keys(x: Extraction) -> set[tuple]:

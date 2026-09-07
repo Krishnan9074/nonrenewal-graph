@@ -26,7 +26,7 @@ Every insight module has one public function, `compute(con) -> DataFrame`, that 
 
 Five findings modules, then four "serving" tables (evidence, events, trend, explorer) and the county geometry file. Each parquet is named after its module.
 
-### 4.2 `hazard_residual.py` — finding 1
+### 4.2 `hazard_residual.py`: finding 1
 
 ```python
  7  FITS = (
@@ -85,7 +85,7 @@ SQL with three `?` placeholders (the measure's JSON path, the year, the release)
 - **36–43** For each spec: drop ZIPs missing a regressor, add the intercept column, fit ordinary least squares, compute each ZIP's predicted rate and residual, and attach the fit's coefficients, p-values, R² and sample size to every row so the app can show them.
 - **44** Sort so the biggest positive residuals (most above the line) come first; the row number becomes the ZIP's statewide rank.
 
-### 4.3 `matching.py` — the matched control
+### 4.3 `matching.py`: the matched control
 
 ```python
  5  def nearest(treated: pd.DataFrame, pool: pd.DataFrame, cols: list[str], k: int = 5) -> list[str]:
@@ -106,7 +106,7 @@ Given treated rows (protected ZIPs) and a pool (unprotected ZIPs) with the same 
 - **12** For each treated row, the indices of its `k` closest pool rows.
 - **13** The union of those, as sorted ids.
 
-### 4.4 `moratorium_deferral.py` — finding 3
+### 4.4 `moratorium_deferral.py`: finding 3
 
 ```python
  9  FITS = (("2015-2021", "nonrenewed_insurer"), ("2020-2023", "count"))
@@ -186,7 +186,7 @@ Given treated rows (protected ZIPs) and a pool (unprotected ZIPs) with the same 
 
 Run `rows` for each release and add the two ratios the write-up quotes (a zero "before" is treated as missing rather than dividing by it).
 
-### 4.5 `events.py`, `trend.py`, `regulatory_alignment.py` — finding 4
+### 4.5 `events.py`, `trend.py`, `regulatory_alignment.py`: finding 4
 
 `events.py` lists every dated thing the documents contained:
 
@@ -206,7 +206,7 @@ Run `rows` for each release and add the two ratios the write-up quotes (a zero "
 18  """
 ```
 
-Each dated document edge becomes an event with a `kind` (fire, moratorium, regulation, rate filing, rate decision), readable names, its span and URL, and — for moratoria — how many Contra Costa ZIPs it protected (the sub-query on lines 12–13).
+Each dated document edge becomes an event with a `kind` (fire, moratorium, regulation, rate filing, rate decision), readable names, its span and URL, and, for moratoria, how many Contra Costa ZIPs it protected (the sub-query on lines 12–13).
 
 `trend.py` computes the county and statewide series:
 
@@ -281,7 +281,7 @@ Each dated document edge becomes an event with a `kind` (fire, moratorium, regul
 - **12–18** Collapse events to one per (kind, date): all fires declared the same day are one event, labelled by up to four names.
 - **21–35** For each series (insurer-initiated rate, total rate, FAIR count) and each event: read the value in the year before, of, and after the event, for the county and the state; skip if the window is outside the series. Rates are reported as changes in percentage points, counts as percent change.
 
-### 4.6 `fair_mirror.py` — finding 2
+### 4.6 `fair_mirror.py`: finding 2
 
 ```python
  6  SQL = """
@@ -301,7 +301,7 @@ Each dated document edge becomes an event with a `kind` (fire, moratorium, regul
 
 One row per ZIP and year with the FAIR Plan count, its year-over-year change (`lag` is a window function looking at the previous year of the same ZIP), and the FAIR share of all policies where voluntary counts exist. The left join keeps FY2024–2025 rows even though the CDI series has ended.
 
-### 4.7 `actor_centrality.py` — finding 5
+### 4.7 `actor_centrality.py`: finding 5
 
 ```python
  7  SQL = """
@@ -336,7 +336,7 @@ One row per ZIP and year with the FAIR Plan count, its year-over-year change (`l
 - **18–21** Build an undirected NetworkX graph and compute normalised betweenness.
 - **22–35** For every non-ZIP node: degree, betweenness, how many county ZIPs are within two hops, and which relations touch it. Sorted by betweenness.
 
-### 4.8 `evidence.py`, `explorer.py`, `geometry.py` — serving tables
+### 4.8 `evidence.py`, `explorer.py`, `geometry.py`: serving tables
 
 `evidence.py` joins every document edge to its document so the app can show the span and URL. `explorer.py` builds the graph explorer's edge list:
 
@@ -402,7 +402,7 @@ Select the county's ZIPs, simplify their outlines by 30 metres (halves the file)
 - **13–15** Page setup, title, and the plain-language summary.
 - **28–42** A dictionary from tab name to the function that draws it; `st.tabs` creates the tabs and each function draws inside its tab.
 
-### 4.10 `views/data.py` — shared loading and colours
+### 4.10 `views/data.py`: shared loading and colours
 
 ```python
  7  ROOT = Path(__file__).resolve().parent.parent.parent
@@ -428,7 +428,7 @@ Select the county's ZIPs, simplify their outlines by 30 metres (halves the file)
 - **30–32** `st.cache_data` keeps each parquet in memory after the first read so tabs render instantly.
 - **44–49** Given a ramp and a position 0–1, blend between the two neighbouring colours.
 
-### 4.11 `views/map.py` — the choropleth
+### 4.11 `views/map.py`: the choropleth
 
 ```python
 13  def metrics() -> dict[str, tuple[pd.Series, bool, str]]:
@@ -529,7 +529,7 @@ A breadth-first expansion: starting from one entity, take every edge touching th
 80      st.iframe(HTML.format(vis=VIS, nodes=json.dumps(nodes), edges=json.dumps(edges)), height=640)
 ```
 
-The picker offers every non-ZIP entity plus the county's ZIPs (Lafayette by default). The chosen neighbourhood is turned into node and edge lists for vis-network, a JavaScript graph library loaded from a CDN inside an iframe. `title(e)` builds the hover text: relation, extractor, confidence, dates, props, the quoted span and the source URL — the receipt for every edge.
+The picker offers every non-ZIP entity plus the county's ZIPs (Lafayette by default). The chosen neighbourhood is turned into node and edge lists for vis-network, a JavaScript graph library loaded from a CDN inside an iframe. `title(e)` builds the hover text: relation, extractor, confidence, dates, props, the quoted span and the source URL, the receipt for every edge.
 
 ### 4.14 `views/tables.py`
 

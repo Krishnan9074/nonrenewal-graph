@@ -1,4 +1,4 @@
-# policygraph — the complete guide
+# policygraph: the complete guide
 
 *A line-by-line teaching walk-through of the whole project, written for someone who has never seen the code.*
 
@@ -83,8 +83,8 @@ Each arrow is one command (`make fetch`, `make normalize`, and so on). `make all
 
 The graph has three tables (defined in `config/schema.sql`, explained in Part 6):
 
-- **entities** — one row per thing: a ZIP, an insurer, a fire, a moratorium, a regulation, an official, a rate filing, a hazard class, the anonymous "voluntary market". Each has an id, a type, a readable name, and optional attributes (for ZIPs: county, median home value, median income).
-- **edges** — one row per fact: `src --rel--> dst`, with dates, a JSON bag of properties, the document and span it came from, the extractor, and a confidence. The relation vocabulary is closed:
+- **entities**: one row per thing: a ZIP, an insurer, a fire, a moratorium, a regulation, an official, a rate filing, a hazard class, the anonymous "voluntary market". Each has an id, a type, a readable name, and optional attributes (for ZIPs: county, median home value, median income).
+- **edges**: one row per fact: `src --rel--> dst`, with dates, a JSON bag of properties, the document and span it came from, the extractor, and a confidence. The relation vocabulary is closed:
 
 | relation | from → to | produced by |
 |---|---|---|
@@ -99,7 +99,7 @@ The graph has three tables (defined in `config/schema.sql`, explained in Part 6)
 | `AUTHORED` | official → regulation | bulletins ("Senate Bill 824 (Lara, …)") |
 | `DONATED_TO` | insurer → official | in the vocabulary; no source ingested yet |
 
-- **documents** — one row per prose document: id (hash of its text), source, URL, publication date, full text.
+- **documents**: one row per prose document: id (hash of its text), source, URL, publication date, full text.
 
 ### 1.5 Glossary of technical terms
 
@@ -261,16 +261,16 @@ On every push and pull request GitHub checks out the code, installs uv and the d
 
 `.env.example` documents every environment variable. Copy it to `.env` and fill in the keys:
 
-- `CENSUS_API_KEY` — needed once, by `make fetch`, for the ACS download.
-- `EXTRACTION_SERVICE_URL` — where the pipeline finds the service (`http://localhost:8001` on this machine).
-- `EXTRACTION_STORE` — where the service writes artifacts (`data/extractions`).
-- `EXTRACTION_PROVIDER` — `openai_compat` or `anthropic`; which model adapter the worker uses.
-- `OPENAI_COMPAT_BASE_URL`, `OPENAI_COMPAT_API_KEY`, `EXTRACTION_MODEL` — the OpenAI-compatible endpoint (Fireworks), its key, and the model id.
-- `ANTHROPIC_API_KEY` — only if the provider is `anthropic`.
-- `EMBED_MODEL` — the embedding model for the resolver's kNN step.
-- `EXTRACTION_MAX_TOKENS` — output cap per model call (100,000; a 700-ZIP bulletin with quoted spans is about 80,000 tokens).
+- `CENSUS_API_KEY`: needed once, by `make fetch`, for the ACS download.
+- `EXTRACTION_SERVICE_URL`: where the pipeline finds the service (`http://localhost:8001` on this machine).
+- `EXTRACTION_STORE`: where the service writes artifacts (`data/extractions`).
+- `EXTRACTION_PROVIDER`: `openai_compat` or `anthropic`; which model adapter the worker uses.
+- `OPENAI_COMPAT_BASE_URL`, `OPENAI_COMPAT_API_KEY`, `EXTRACTION_MODEL`: the OpenAI-compatible endpoint (Fireworks), its key, and the model id.
+- `ANTHROPIC_API_KEY`: only if the provider is `anthropic`.
+- `EMBED_MODEL`: the embedding model for the resolver's kNN step.
+- `EXTRACTION_MAX_TOKENS`: output cap per model call (100,000; a 700-ZIP bulletin with quoted spans is about 80,000 tokens).
 
-`.gitignore` keeps out of git: `.env`, the virtual environment, compiled Python, the raw downloads (330 MB), the normalized tables, the DuckDB file, the service's SQLite queue index, and macOS `.DS_Store` files. Everything else — including the extraction artifacts and the insight tables — is committed, which is what lets the graph and the app rebuild without any network or key.
+`.gitignore` keeps out of git: `.env`, the virtual environment, compiled Python, the raw downloads (330 MB), the normalized tables, the DuckDB file, the service's SQLite queue index, and macOS `.DS_Store` files. Everything else, including the extraction artifacts and the insight tables is committed, which is what lets the graph and the app rebuild without any network or key.
 
 ### 2.7 The command-line entry point: `policygraph/__main__.py`
 

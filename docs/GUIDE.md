@@ -1,4 +1,4 @@
-# policygraph — the complete guide
+# policygraph: the complete guide
 
 *A line-by-line teaching walk-through of the whole project, written for someone who has never seen the code.*
 
@@ -83,8 +83,8 @@ Each arrow is one command (`make fetch`, `make normalize`, and so on). `make all
 
 The graph has three tables (defined in `config/schema.sql`, explained in Part 6):
 
-- **entities** — one row per thing: a ZIP, an insurer, a fire, a moratorium, a regulation, an official, a rate filing, a hazard class, the anonymous "voluntary market". Each has an id, a type, a readable name, and optional attributes (for ZIPs: county, median home value, median income).
-- **edges** — one row per fact: `src --rel--> dst`, with dates, a JSON bag of properties, the document and span it came from, the extractor, and a confidence. The relation vocabulary is closed:
+- **entities**: one row per thing: a ZIP, an insurer, a fire, a moratorium, a regulation, an official, a rate filing, a hazard class, the anonymous "voluntary market". Each has an id, a type, a readable name, and optional attributes (for ZIPs: county, median home value, median income).
+- **edges**: one row per fact: `src --rel--> dst`, with dates, a JSON bag of properties, the document and span it came from, the extractor, and a confidence. The relation vocabulary is closed:
 
 | relation | from → to | produced by |
 |---|---|---|
@@ -99,7 +99,7 @@ The graph has three tables (defined in `config/schema.sql`, explained in Part 6)
 | `AUTHORED` | official → regulation | bulletins ("Senate Bill 824 (Lara, …)") |
 | `DONATED_TO` | insurer → official | in the vocabulary; no source ingested yet |
 
-- **documents** — one row per prose document: id (hash of its text), source, URL, publication date, full text.
+- **documents**: one row per prose document: id (hash of its text), source, URL, publication date, full text.
 
 ### 1.5 Glossary of technical terms
 
@@ -261,16 +261,16 @@ On every push and pull request GitHub checks out the code, installs uv and the d
 
 `.env.example` documents every environment variable. Copy it to `.env` and fill in the keys:
 
-- `CENSUS_API_KEY` — needed once, by `make fetch`, for the ACS download.
-- `EXTRACTION_SERVICE_URL` — where the pipeline finds the service (`http://localhost:8001` on this machine).
-- `EXTRACTION_STORE` — where the service writes artifacts (`data/extractions`).
-- `EXTRACTION_PROVIDER` — `openai_compat` or `anthropic`; which model adapter the worker uses.
-- `OPENAI_COMPAT_BASE_URL`, `OPENAI_COMPAT_API_KEY`, `EXTRACTION_MODEL` — the OpenAI-compatible endpoint (Fireworks), its key, and the model id.
-- `ANTHROPIC_API_KEY` — only if the provider is `anthropic`.
-- `EMBED_MODEL` — the embedding model for the resolver's kNN step.
-- `EXTRACTION_MAX_TOKENS` — output cap per model call (100,000; a 700-ZIP bulletin with quoted spans is about 80,000 tokens).
+- `CENSUS_API_KEY`: needed once, by `make fetch`, for the ACS download.
+- `EXTRACTION_SERVICE_URL`: where the pipeline finds the service (`http://localhost:8001` on this machine).
+- `EXTRACTION_STORE`: where the service writes artifacts (`data/extractions`).
+- `EXTRACTION_PROVIDER`: `openai_compat` or `anthropic`; which model adapter the worker uses.
+- `OPENAI_COMPAT_BASE_URL`, `OPENAI_COMPAT_API_KEY`, `EXTRACTION_MODEL`: the OpenAI-compatible endpoint (Fireworks), its key, and the model id.
+- `ANTHROPIC_API_KEY`: only if the provider is `anthropic`.
+- `EMBED_MODEL`: the embedding model for the resolver's kNN step.
+- `EXTRACTION_MAX_TOKENS`: output cap per model call (100,000; a 700-ZIP bulletin with quoted spans is about 80,000 tokens).
 
-`.gitignore` keeps out of git: `.env`, the virtual environment, compiled Python, the raw downloads (330 MB), the normalized tables, the DuckDB file, the service's SQLite queue index, and macOS `.DS_Store` files. Everything else — including the extraction artifacts and the insight tables — is committed, which is what lets the graph and the app rebuild without any network or key.
+`.gitignore` keeps out of git: `.env`, the virtual environment, compiled Python, the raw downloads (330 MB), the normalized tables, the DuckDB file, the service's SQLite queue index, and macOS `.DS_Store` files. Everything else, including the extraction artifacts and the insight tables is committed, which is what lets the graph and the app rebuild without any network or key.
 
 ### 2.7 The command-line entry point: `policygraph/__main__.py`
 
@@ -337,7 +337,7 @@ On every push and pull request GitHub checks out the code, installs uv and the d
 - **17–22** Read and write YAML files. `safe_load` refuses to execute anything; `sort_keys=False` preserves the order the code wrote.
 ## Part 3. The pipeline, file by file
 
-### 3.1 `policygraph/fetch.py` — downloading sources
+### 3.1 `policygraph/fetch.py`: downloading sources
 
 ```python
  1  import json
@@ -495,7 +495,7 @@ The decision tree for one URL:
 - **93–104** For each source and each of its URLs: fetch, record, and print one status line. If the hash differs from the committed one, the line says `changed` even when the local file was already current, so a reviewer notices upstream drift.
 - **105–107** Write the local manifest and the committed hash list.
 
-### 3.2 `policygraph/normalize/__init__.py` — running the normalizers
+### 3.2 `policygraph/normalize/__init__.py`: running the normalizers
 
 ```python
  1  from policygraph import CONFIG, NORMALIZED
@@ -520,7 +520,7 @@ The decision tree for one URL:
 - **13** The documents table is built by appending one source at a time (bulletins, then press releases), so it is deleted first to avoid stale rows from earlier runs.
 - **14–17** For each normalizer, find every source whose `normalizer:` field names it and which was actually fetched, and call its `run(spec, files)`. Every normalizer has the same signature: the source's spec from `sources.yaml` and its list of fetched-file records.
 
-### 3.3 `policygraph/normalize/zcta.py` — ZIP boundaries
+### 3.3 `policygraph/normalize/zcta.py`: ZIP boundaries
 
 ```python
  5  CA_ZIPS = ("90000", "96200")  # the cartographic file is national
@@ -532,7 +532,7 @@ The decision tree for one URL:
 - **9** GeoPandas reads a shapefile straight out of the zip archive. The Census column `ZCTA5CE20` is renamed `zip`.
 - **10** Keep only California ZIPs (90000–96199), only the two columns needed, reproject to California Albers (metres, area-true), and write parquet.
 
-### 3.4 `policygraph/normalize/fhsz.py` — hazard share per ZIP
+### 3.4 `policygraph/normalize/fhsz.py`: hazard share per ZIP
 
 ```python
  6  HAZ = {"Moderate": "moderate", "High": "high", "Very High": "very_high"}  # LRA also carries NonWildland, dropped
@@ -563,7 +563,7 @@ The decision tree for one URL:
 
 Reads the two fetched layers (state and local responsibility areas), stamps them with the CRS the fetch requested (GeoJSON from ArcGIS does not say), concatenates, overlays, writes.
 
-### 3.5 `policygraph/normalize/acs.py` — Census medians
+### 3.5 `policygraph/normalize/acs.py`: Census medians
 
 ```python
  5  VARS = {
@@ -583,7 +583,7 @@ Reads the two fetched layers (state and local responsibility areas), stamps them
 - **13** The Census API returns a JSON array whose first row is the header. Rebuild a frame using row 0 as column names and rename.
 - **14–15** Convert to numbers; the Census marks suppressed values with a large negative sentinel, which `mask(vals < 0)` turns into null.
 
-### 3.6 `policygraph/normalize/cdi_nonrenewal.py` — the core counts
+### 3.6 `policygraph/normalize/cdi_nonrenewal.py`: the core counts
 
 ```python
  7  COMMON = {"County": "county", "ZIP Code": "zip", "Year": "year", "New": "new", "Renewed": "renewed"}
@@ -628,7 +628,7 @@ CDI published two workbooks with different columns. The 2015–2021 release spli
 
 Read each workbook as text (so ZIPs keep their zeros), parse, stack, write. The two releases stay distinguishable by `release`.
 
-### 3.7 `policygraph/normalize/cdi_fair_plan.py` — the FAIR Plan PDF
+### 3.7 `policygraph/normalize/cdi_fair_plan.py`: the FAIR Plan PDF
 
 ```python
  8  ROW_RE = re.compile(r"^\d{5}\b")
@@ -674,7 +674,7 @@ The PDF is a table whose text extraction gives lines like `94549 91% 1,773 265% 
 
 pypdf extracts the text of every page (the `cryptography` dependency lets it open the encrypted file); the result goes through `parse`.
 
-### 3.8 `policygraph/normalize/html_text.py` — press-release HTML to text
+### 3.8 `policygraph/normalize/html_text.py`: press-release HTML to text
 
 ```python
  1  from html.parser import HTMLParser
@@ -722,7 +722,7 @@ A tiny HTML-to-text converter built on Python's standard parser, so no new depen
 - **32–34** CDI's page template puts the headline in `<H1>` and the sidebar in a `content_right_column` div. Take the text between them; if the template ever changes, stop loudly.
 - **36–38** Feed that slice to the parser, join the pieces, collapse runs of whitespace within each line, and drop empty lines.
 
-### 3.9 `policygraph/normalize/documents.py` — the documents table
+### 3.9 `policygraph/normalize/documents.py`: the documents table
 
 ```python
 12  DATE_RE = re.compile(r"(?:(?:DATE|For Release):\s*|^)([A-Z][a-z]+ \d{1,2}, \d{4})(?:\s*[-–—]|\s*$)", re.M)
@@ -769,7 +769,7 @@ A tiny HTML-to-text converter built on Python's standard parser, so no new depen
 - **39** `doc_source` (`cdi_bulletin` or `cdi_press`) comes from `sources.yaml`.
 - **47–50** Append to the existing table (the bulletins normalizer runs, then the press one), removing duplicate ids.
 
-### 3.10 `policygraph/extract.py` — submitting documents to the service
+### 3.10 `policygraph/extract.py`: submitting documents to the service
 
 ```python
 10  SERVICE = os.environ.get("EXTRACTION_SERVICE_URL", "http://localhost:8000")
@@ -796,7 +796,7 @@ The pipeline never calls a model. It talks to the service over HTTP.
 - **23** Save the manifest. This file, committed to git, is what pins exactly which extraction artifacts the graph loads.
 - **24–25** If any document failed validation or errored, the stage fails.
 
-### 3.11 `policygraph/resolve.py` — mentions to entity ids
+### 3.11 `policygraph/resolve.py`: mentions to entity ids
 
 The model emits *mentions* ("Eaton Fire 2025", "State Farm", "94563"). Resolution turns each into a canonical entity id, cheapest method first.
 
@@ -932,7 +932,7 @@ From one extraction artifact, list its entities with, as context, the first quot
 - **114–117** Write the pins back, keeping only mentions that still exist, sorted for a stable diff.
 - **118–119** Save the resolution table and print a count per method.
 
-### 3.12 `policygraph/names.py` — readable names for rule-minted ids
+### 3.12 `policygraph/names.py`: readable names for rule-minted ids
 
 ```python
  3  FIRE_RE = re.compile(r"^fire:([a-z0-9-]+):(\d{4})$")
@@ -965,7 +965,7 @@ From one extraction artifact, list its entities with, as context, the first quot
 
 Entities made by rule (ZIPs, fires, moratoria, bills) have no hand-written name, so this derives one: `zip:94549` → `Lafayette 94549` (from `config/places.yaml`), `fire:scu-lightning-complex:2020` → `SCU Lightning Complex Fire 2020` (fire-complex acronyms stay upper-case), `bill:ca:SB824` → `SB 824`. The app's timeline and explorer show these.
 
-### 3.13 `policygraph/graph.py` — building the DuckDB graph
+### 3.13 `policygraph/graph.py`: building the DuckDB graph
 
 ```python
 11  COLS = ["src", "rel", "dst", "valid_from", "valid_to", "props", "doc_id", "span", "extractor", "confidence"]
@@ -1140,7 +1140,7 @@ Every insight module has one public function, `compute(con) -> DataFrame`, that 
 
 Five findings modules, then four "serving" tables (evidence, events, trend, explorer) and the county geometry file. Each parquet is named after its module.
 
-### 4.2 `hazard_residual.py` — finding 1
+### 4.2 `hazard_residual.py`: finding 1
 
 ```python
  7  FITS = (
@@ -1199,7 +1199,7 @@ SQL with three `?` placeholders (the measure's JSON path, the year, the release)
 - **36–43** For each spec: drop ZIPs missing a regressor, add the intercept column, fit ordinary least squares, compute each ZIP's predicted rate and residual, and attach the fit's coefficients, p-values, R² and sample size to every row so the app can show them.
 - **44** Sort so the biggest positive residuals (most above the line) come first; the row number becomes the ZIP's statewide rank.
 
-### 4.3 `matching.py` — the matched control
+### 4.3 `matching.py`: the matched control
 
 ```python
  5  def nearest(treated: pd.DataFrame, pool: pd.DataFrame, cols: list[str], k: int = 5) -> list[str]:
@@ -1220,7 +1220,7 @@ Given treated rows (protected ZIPs) and a pool (unprotected ZIPs) with the same 
 - **12** For each treated row, the indices of its `k` closest pool rows.
 - **13** The union of those, as sorted ids.
 
-### 4.4 `moratorium_deferral.py` — finding 3
+### 4.4 `moratorium_deferral.py`: finding 3
 
 ```python
  9  FITS = (("2015-2021", "nonrenewed_insurer"), ("2020-2023", "count"))
@@ -1300,7 +1300,7 @@ Given treated rows (protected ZIPs) and a pool (unprotected ZIPs) with the same 
 
 Run `rows` for each release and add the two ratios the write-up quotes (a zero "before" is treated as missing rather than dividing by it).
 
-### 4.5 `events.py`, `trend.py`, `regulatory_alignment.py` — finding 4
+### 4.5 `events.py`, `trend.py`, `regulatory_alignment.py`: finding 4
 
 `events.py` lists every dated thing the documents contained:
 
@@ -1320,7 +1320,7 @@ Run `rows` for each release and add the two ratios the write-up quotes (a zero "
 18  """
 ```
 
-Each dated document edge becomes an event with a `kind` (fire, moratorium, regulation, rate filing, rate decision), readable names, its span and URL, and — for moratoria — how many Contra Costa ZIPs it protected (the sub-query on lines 12–13).
+Each dated document edge becomes an event with a `kind` (fire, moratorium, regulation, rate filing, rate decision), readable names, its span and URL, and, for moratoria, how many Contra Costa ZIPs it protected (the sub-query on lines 12–13).
 
 `trend.py` computes the county and statewide series:
 
@@ -1395,7 +1395,7 @@ Each dated document edge becomes an event with a `kind` (fire, moratorium, regul
 - **12–18** Collapse events to one per (kind, date): all fires declared the same day are one event, labelled by up to four names.
 - **21–35** For each series (insurer-initiated rate, total rate, FAIR count) and each event: read the value in the year before, of, and after the event, for the county and the state; skip if the window is outside the series. Rates are reported as changes in percentage points, counts as percent change.
 
-### 4.6 `fair_mirror.py` — finding 2
+### 4.6 `fair_mirror.py`: finding 2
 
 ```python
  6  SQL = """
@@ -1415,7 +1415,7 @@ Each dated document edge becomes an event with a `kind` (fire, moratorium, regul
 
 One row per ZIP and year with the FAIR Plan count, its year-over-year change (`lag` is a window function looking at the previous year of the same ZIP), and the FAIR share of all policies where voluntary counts exist. The left join keeps FY2024–2025 rows even though the CDI series has ended.
 
-### 4.7 `actor_centrality.py` — finding 5
+### 4.7 `actor_centrality.py`: finding 5
 
 ```python
  7  SQL = """
@@ -1450,7 +1450,7 @@ One row per ZIP and year with the FAIR Plan count, its year-over-year change (`l
 - **18–21** Build an undirected NetworkX graph and compute normalised betweenness.
 - **22–35** For every non-ZIP node: degree, betweenness, how many county ZIPs are within two hops, and which relations touch it. Sorted by betweenness.
 
-### 4.8 `evidence.py`, `explorer.py`, `geometry.py` — serving tables
+### 4.8 `evidence.py`, `explorer.py`, `geometry.py`: serving tables
 
 `evidence.py` joins every document edge to its document so the app can show the span and URL. `explorer.py` builds the graph explorer's edge list:
 
@@ -1516,7 +1516,7 @@ Select the county's ZIPs, simplify their outlines by 30 metres (halves the file)
 - **13–15** Page setup, title, and the plain-language summary.
 - **28–42** A dictionary from tab name to the function that draws it; `st.tabs` creates the tabs and each function draws inside its tab.
 
-### 4.10 `views/data.py` — shared loading and colours
+### 4.10 `views/data.py`: shared loading and colours
 
 ```python
  7  ROOT = Path(__file__).resolve().parent.parent.parent
@@ -1542,7 +1542,7 @@ Select the county's ZIPs, simplify their outlines by 30 metres (halves the file)
 - **30–32** `st.cache_data` keeps each parquet in memory after the first read so tabs render instantly.
 - **44–49** Given a ramp and a position 0–1, blend between the two neighbouring colours.
 
-### 4.11 `views/map.py` — the choropleth
+### 4.11 `views/map.py`: the choropleth
 
 ```python
 13  def metrics() -> dict[str, tuple[pd.Series, bool, str]]:
@@ -1643,7 +1643,7 @@ A breadth-first expansion: starting from one entity, take every edge touching th
 80      st.iframe(HTML.format(vis=VIS, nodes=json.dumps(nodes), edges=json.dumps(edges)), height=640)
 ```
 
-The picker offers every non-ZIP entity plus the county's ZIPs (Lafayette by default). The chosen neighbourhood is turned into node and edge lists for vis-network, a JavaScript graph library loaded from a CDN inside an iframe. `title(e)` builds the hover text: relation, extractor, confidence, dates, props, the quoted span and the source URL — the receipt for every edge.
+The picker offers every non-ZIP entity plus the county's ZIPs (Lafayette by default). The chosen neighbourhood is turned into node and edge lists for vis-network, a JavaScript graph library loaded from a CDN inside an iframe. `title(e)` builds the hover text: relation, extractor, confidence, dates, props, the quoted span and the source URL, the receipt for every edge.
 
 ### 4.14 `views/tables.py`
 
@@ -1896,7 +1896,7 @@ Each check returns `None` on success or a message on failure; the message is fed
 
 Run all four checks on every edge; keep the clean ones, collect a readable error for each rejected one.
 
-### 5.5 `expand.py` — deterministic expansion of ZIP blocks
+### 5.5 `expand.py`: deterministic expansion of ZIP blocks
 
 ```python
  8  FIRE_RE = re.compile(r"^(.+?) Fires?(?: \(.*?\))?(?: (\d{4}))?(?: \d{4})?$", re.I)
@@ -1960,7 +1960,7 @@ Builds a rename map from every fire or moratorium mention the model produced to 
 78      return Extraction(entities=list(ents.values()), edges=list(edges.values()))
 ```
 
-- **45–54** Apply the rename map to entities and edges, and de-duplicate edges by (source, relation, target) — the model's own edge wins because it is inserted first (`setdefault` keeps the first value).
+- **45–54** Apply the rename map to entities and edges, and de-duplicate edges by (source, relation, target), the model's own edge wins because it is inserted first (`setdefault` keeps the first value).
 - **55–56** Index the moratorium mentions, and find the official who issued them (the Commissioner).
 - **57–77** For every dated block: find the model's moratorium mention for this fire (same name, same declaration date) or synthesise one from the heading; then add, only where missing, the TRIGGERED edge, the ISSUED edge and one PROTECTED_BY edge per ZIP. Expanded edges carry the block's verbatim span, a confidence of 0.97, the moratorium's one-year window, and `props.expanded_from = "zip_block"` so downstream code can tell them apart.
 
@@ -2015,7 +2015,7 @@ An adapter is anything with a `model_id` and a `structured(prompt, schema)` meth
 
 The Anthropic adapter does the same through Anthropic's SDK, using a forced tool call whose input schema is the JSON schema.
 
-### 5.7 `embed.py` and `resolve.py` — the resolver's model steps
+### 5.7 `embed.py` and `resolve.py`: the resolver's model steps
 
 ```python
 15      def embed(self, texts: list[str]) -> list[list[float]]:
@@ -2072,7 +2072,7 @@ The decision rule for one mention, given candidates ranked by cosine similarity:
 
 Every answer is cached by a hash of the mention, its context, the same-type candidates, the two model ids and a resolver version, so identical questions never cost a second call. Mentions and candidates are embedded in one batch; each mention is compared only with candidates of its own type (an insurer can never resolve to an official).
 
-### 5.8 `store.py` — queue and artifact store
+### 5.8 `store.py`: queue and artifact store
 
 ```python
  6  DDL = """
@@ -2188,7 +2188,7 @@ The prompt states the rules the validators enforce (verbatim spans, anchored ZIP
 
 The schema is the JSON shape the API forces the model to produce: an `entities` array and an `edges` array with exactly the fields the Pydantic models expect, enumerated types and relations, and `additionalProperties: false` so nothing extra sneaks in.
 
-### 5.12 `eval/__init__.py` — scoring against the golden set
+### 5.12 `eval/__init__.py`: scoring against the golden set
 
 ```python
 12  def keys(x: Extraction) -> set[tuple]:
@@ -2264,22 +2264,22 @@ ZIP → place name for Contra Costa, used only for labels on the map, the timeli
 
 Tests run with `make test` in about two seconds and need no network, no key and no data files beyond the config. What each file proves:
 
-- **`test_fetch.py`** — environment variables are expanded and an unset one fails; conditional headers are built only from validators we have; a 304 leaves the prior record untouched; a source without validators is `cached` unless forced.
-- **`test_normalize.py`** — the FAIR Plan parser reads rows and missing values, rejects a malformed row, and follows the footer when a sixth fiscal year appears; the CDI parser handles both releases and fails on a missing column; the ACS sentinel becomes null; the hazard overlay computes shares and ignores non-wildland; the HTML converter and the date finder work on the three date formats.
-- **`test_chunk.py`** — a short text is one chunk; long text is covered end to end with overlaps.
-- **`test_validators.py`** — a valid edge is kept; a paraphrased span, a ZIP not in the text, a wrong type pair, and reversed dates are each rejected with the right message; a word broken across lines still matches.
-- **`test_expand.py`** — ZIP blocks get the right names, dates, ZIPs and verbatim spans from a synthetic bulletin (including the `9 4572` case, which is correctly *not* read as a ZIP); expansion adds the missing fires and ZIPs, keeps the model's own edges, folds yearless mentions, and marks what it added; the prompt view lists blocks without their ZIPs; the mention-folding rules map every known variant.
-- **`test_worker.py`** — processing produces an artifact with the expected id; a second call is a cache hit and `force` recomputes; a bad span triggers exactly one retry and then a `failed_validation` status; merge keeps the more confident duplicate.
-- **`test_adapters.py`** — the OpenAI-compatible adapter sends the right request and reassembles a streamed response; the embedder returns vectors in input order; transport errors are retried and then succeed.
-- **`test_resolve_service.py`** — the decision rule: clear cosine winner accepted; small margin goes to the judge; judge rejection is unresolved but records the nearest; below the band the judge is never called; candidates are restricted to the mention's type and answers are cached.
-- **`test_resolve.py`** — canonical rules for ZIPs, bills, fires and moratoria; aliases are case-insensitive and typed; pins are used before the service; offline residuals become pending; the original mention string is preserved.
-- **`test_resolution_set.py`** — runs the 53-mention regression set in `tests/resolution_set.yaml` through the offline resolver and fails if any expected id or method differs.
-- **`test_graph.py`** — moratorium windows are filled from the id; explicit dates are kept; readable names for rule-minted ids.
-- **`test_insights.py`** — on a six-ZIP fixture graph: residuals sum to zero per fit and both specs run; the deferral module finds the protected ZIP, the right year, and both controls with the expected sums; the moratorium year is the window midpoint; the FAIR share is computed; the trend includes the FAIR series and the event study reads the right before/during values.
+- **`test_fetch.py`**: environment variables are expanded and an unset one fails; conditional headers are built only from validators we have; a 304 leaves the prior record untouched; a source without validators is `cached` unless forced.
+- **`test_normalize.py`**: the FAIR Plan parser reads rows and missing values, rejects a malformed row, and follows the footer when a sixth fiscal year appears; the CDI parser handles both releases and fails on a missing column; the ACS sentinel becomes null; the hazard overlay computes shares and ignores non-wildland; the HTML converter and the date finder work on the three date formats.
+- **`test_chunk.py`**: a short text is one chunk; long text is covered end to end with overlaps.
+- **`test_validators.py`**: a valid edge is kept; a paraphrased span, a ZIP not in the text, a wrong type pair, and reversed dates are each rejected with the right message; a word broken across lines still matches.
+- **`test_expand.py`**: ZIP blocks get the right names, dates, ZIPs and verbatim spans from a synthetic bulletin (including the `9 4572` case, which is correctly *not* read as a ZIP); expansion adds the missing fires and ZIPs, keeps the model's own edges, folds yearless mentions, and marks what it added; the prompt view lists blocks without their ZIPs; the mention-folding rules map every known variant.
+- **`test_worker.py`**: processing produces an artifact with the expected id; a second call is a cache hit and `force` recomputes; a bad span triggers exactly one retry and then a `failed_validation` status; merge keeps the more confident duplicate.
+- **`test_adapters.py`**: the OpenAI-compatible adapter sends the right request and reassembles a streamed response; the embedder returns vectors in input order; transport errors are retried and then succeed.
+- **`test_resolve_service.py`**: the decision rule: clear cosine winner accepted; small margin goes to the judge; judge rejection is unresolved but records the nearest; below the band the judge is never called; candidates are restricted to the mention's type and answers are cached.
+- **`test_resolve.py`**: canonical rules for ZIPs, bills, fires and moratoria; aliases are case-insensitive and typed; pins are used before the service; offline residuals become pending; the original mention string is preserved.
+- **`test_resolution_set.py`**: runs the 53-mention regression set in `tests/resolution_set.yaml` through the offline resolver and fails if any expected id or method differs.
+- **`test_graph.py`**: moratorium windows are filled from the id; explicit dates are kept; readable names for rule-minted ids.
+- **`test_insights.py`**: on a six-ZIP fixture graph: residuals sum to zero per fit and both specs run; the deferral module finds the protected ZIP, the right year, and both controls with the expected sums; the moratorium year is the window midpoint; the FAIR share is computed; the trend includes the FAIR series and the event study reads the right before/during values.
 
 ### 6.8 The extraction quality evaluation (`make eval`)
 
-Four hand-labelled bulletins with 1,232 expected edges. The current numbers: precision 0.992, recall 0.997. The ten false positives are the Lake County Eagle Fire's ZIP list, which the 2019 bulletin prints and then withdraws in a footnote — the parser cannot read footnotes, and the choice was to keep the deterministic rule simple and report the miss. The misses are one ZIP the PDF prints as `9 4572` and the "(Lara, …)" author credit for SB 824 that the model emits in one bulletin of four.
+Four hand-labelled bulletins with 1,232 expected edges. The current numbers: precision 0.992, recall 0.997. The ten false positives are the Lake County Eagle Fire's ZIP list, which the 2019 bulletin prints and then withdraws in a footnote, the parser cannot read footnotes, and the choice was to keep the deterministic rule simple and report the miss. The misses are one ZIP the PDF prints as `9 4572` and the "(Lara, …)" author credit for SB 824 that the model emits in one bulletin of four.
 
 ### 6.9 What the findings say (`docs/FINDINGS.md`)
 
